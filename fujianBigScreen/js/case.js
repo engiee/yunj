@@ -491,7 +491,7 @@ $.get('../json/china.json',function(chinaJson){
                 {name: "太仓", value: 27},
                 {name: "曲靖", value: 27},
                 {name: "烟台", value: 28},
-                {name: "福州", value: 29},
+                {name: "福州", value: 1122229},
                 {name: "瓦房店", value: 30},
                 {name: "即墨", value: 30},
                 {name: "抚顺", value: 31},
