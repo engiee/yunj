@@ -1,0 +1,261 @@
+.zxck .midle {
+  margin-top: 2vh;
+  overflow: hidden;
+}
+.zxck .midle .midNums {
+  width: 18.8vw;
+  height: 13vh;
+  margin-right: 1vw;
+  background: url("../img/zxMid.png") no-repeat;
+  background-size: contain;
+  float: left;
+}
+.zxck .midle .midNums:last-child {
+  margin-right: 0;
+}
+.zxck .midle .midNums .miText {
+  color: #00f1ff;
+  margin: 0 0.8vw;
+  font-size: 0.8vw;
+  line-height: 5vh;
+}
+.zxck .midle .midNums .miText span:last-child {
+  float: right;
+}
+.zxck .midle .midNums .txtNums {
+  margin: 0 0.8vw;
+  text-align: center;
+  color: white;
+  font-size: 1.5vw;
+  font-weight: bold;
+  font-family: DIN Alternate;
+  height: 2vh;
+}
+.zxck .midle .midNums .txtNums .ddw {
+  position: relative;
+  font-weight: bold;
+  font-family: DIN Alternate;
+  color: white;
+  font-size: 1.5vw;
+  margin-right: 1vw;
+}
+.zxck .midle .midNums .txtNums .ddw .dw {
+  font-size: 0.5vw;
+  position: absolute;
+  color: #00f1ff;
+  top: 0px;
+  right: -0.8vw;
+}
+.zxck .midle .midNums .txtNums .ddw .xda {
+  position: absolute;
+  bottom: 0;
+  color: #00f1ff;
+  font-weight: normal;
+  font-size: 1vw;
+  font-family: "Microsoft YaHei";
+}
+.zxck .zxMain {
+  margin-top: 0vh;
+}
+.zxck .zxMain .zxMainLeft {
+  float: left;
+  border: 1px solid #2bb3ff;
+  width: calc(64vw - 10px);
+  width: -webkit-calc(64vw - 10px);
+  width: -moz-calc(64vw - 10px);
+  height: 45vh;
+  position: relative;
+}
+.zxck .zxMain .zxMainLeft .zxtitle {
+  position: absolute;
+  width: 16vw;
+  height: 4vh;
+  line-height: 4vh;
+  left: 50%;
+  top: -2vh;
+  color: #00f1ff;
+  border: 1px solid #2bb3ff;
+  background: #0a2f8c;
+  text-align: center;
+  margin-left: -8vw;
+  z-index: 9;
+}
+.zxck .zxMain .zxMainLeft .zxcontainer {
+  overflow: hidden;
+}
+.zxck .zxMain .zxMainLeft .zxcontainer .line {
+  width: 64vw;
+  height: 44vh;
+}
+.zxck .zxMain .zxMainRight {
+  float: right;
+  width: calc(34vw - 10px);
+  width: -webkit-calc(34vw - 10px);
+  width: -moz-calc(34vw - 10px);
+  height: 45vh;
+  border: 1px solid #2bb3ff;
+  position: relative;
+}
+.zxck .zxMain .zxMainRight .zxtitle {
+  position: absolute;
+  width: 10vw;
+  height: 4vh;
+  line-height: 4vh;
+  left: 50%;
+  top: -2vh;
+  color: #00f1ff;
+  border: 1px solid #2bb3ff;
+  background: #0a266e;
+  text-align: center;
+  margin-left: -5vw;
+  font-size: 1.2vw;
+}
+.zxck .zxMain .zxMainRight .zxrList .listNums {
+  height: 4vh;
+}
+.zxck .zxMain .zxMainRight .zxrList .listNums div {
+  background: #003084;
+  width: 8vw;
+  height: 3vh;
+  line-height: 3vh;
+  float: right;
+  margin: 2vh 1vw 0 0;
+}
+.zxck .zxMain .zxMainRight .zxrList .listNums div span {
+  display: inline-block;
+  width: 4vw;
+  height: 3vh;
+  text-align: center;
+  font-size: 0.8vw;
+  cursor: pointer;
+}
+.zxck .zxMain .zxMainRight .zxrList .listNums div .on {
+  background: #1757ae;
+}
+.zxck .zxMain .zxMainRight .zxrList .listCon {
+  width: 96%;
+  margin: 4vh auto;
+}
+.zxck .zxMain .zxMainRight .zxrList .listCon .liststar {
+  font-size: 1vw;
+  height: 3vh;
+  margin-bottom: 1vh;
+}
+.zxck .zxMain .zxMainRight .zxrList .listCon .liststar p {
+  width: 100%;
+}
+.zxck .zxMain .zxMainRight .zxrList .listCon .liststar p:first-child {
+  height: 1.7vh;
+  line-height: 1.7vh;
+}
+.zxck .zxMain .zxMainRight .zxrList .listCon .liststar p:first-child .numps {
+  float: right;
+}
+.zxck .zxMain .zxMainRight .zxrList .listCon .liststar p:first-child .numps span {
+  font-family: DIN Alternate;
+}
+.zxck .zxMain .zxMainRight .zxrList .listCon .liststar p:last-child {
+  margin-top: 0.6vh;
+  width: 100%;
+  background: #0a266e;
+  height: 0.5vh;
+  position: relative;
+}
+.zxck .zxMain .zxMainRight .zxrList .listCon .liststar:nth-child(odd) p:last-child .proportion {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 0;
+  height: 0.5vh;
+  background-image: linear-gradient(90deg, #f85a40 0%, #f89954 100%);
+}
+.zxck .zxMain .zxMainRight .zxrList .listCon .liststar:nth-child(even) p:last-child .proportion {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 0;
+  height: 0.5vh;
+  background-image: linear-gradient(-90deg, #05edff 0%, #0079db 100%);
+}
+.zxck .botCon {
+  width: 100%;
+  height: 20vh;
+  margin-top: 48vh;
+}
+.zxck .botCon .botLeft {
+  float: left;
+  width: calc(49vw - 10px);
+  width: -webkit-calc(49vw - 10px);
+  width: -moz-calc(49vw - 10px);
+  border: 1px solid #2bb3ff;
+  height: 24vh;
+  position: relative;
+}
+.zxck .botCon .botLeft .zxtitle {
+  position: absolute;
+  width: 10vw;
+  height: 4vh;
+  line-height: 4vh;
+  left: 50%;
+  top: -2vh;
+  color: #00f1ff;
+  border: 1px solid #2bb3ff;
+  background: #0a2f8c;
+  text-align: center;
+  margin-left: -5vw;
+  font-size: 1.2vw;
+}
+.zxck .botCon .botLeft .zxcase {
+  width: 47vw;
+  height: 24vh;
+}
+.zxck .botCon .botRight {
+  float: right;
+  width: calc(49vw - 10px);
+  width: -webkit-calc(49vw - 10px);
+  width: -moz-calc(49vw - 10px);
+  height: 24vh;
+  border: 1px solid #2bb3ff;
+  position: relative;
+}
+.zxck .botCon .botRight .zxtitle {
+  font-size: 1.2vw;
+  position: absolute;
+  width: 14vw;
+  height: 4vh;
+  line-height: 4vh;
+  left: 50%;
+  top: -2vh;
+  color: #00f1ff;
+  border: 1px solid #2bb3ff;
+  background: #0a2f8c;
+  text-align: center;
+  margin-left: -7vw;
+}
+.zxck .botCon .botRight .sum {
+  width: 47vw;
+  height: 24vh;
+}
+/*设配各种屏幕*/
+@media (min-width:1000px) and ( max-width: 1299px){
+
+}
+@media (min-width:1300px) and ( max-width: 1399px){
+
+}
+@media (min-width:1400px) and ( max-width: 1499px){
+
+}
+@media (min-width:1500px) and ( max-width: 1699px){
+
+}
+@media (min-width:1699px) and ( max-width: 1799px){
+
+}
+@media (max-width:40000px) and ( min-width: 1800px) {
+  .zxck .midle .midNums .miText{
+  line-height:4vh;
+  }
+}

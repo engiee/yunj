@@ -1,0 +1,602 @@
+
+.bigscreen {
+  width: 100%;
+  height: 100vh;
+  background: #0351cf url("../img/mainBg.png") no-repeat;
+  -webkit-background-size: contain;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  overflow: hidden;
+}
+/*公共小组件*/
+.verticalLine{
+  position: absolute;
+  height:30px;
+  border-left:1px solid #105189;
+  top:5px;
+  left:40%;
+}
+.verticalLine::before,.verticalLine::after{
+  content: '';
+  display: block;
+  width:3px;
+  height:3px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #105189;
+  position: absolute;
+  right:-0.5px;
+}
+.verticalLine::after{
+  bottom: 0;
+}
+.topWan{
+  color:#00f1ff;
+  font-size:0.4em;
+  position: relative;
+  bottom:0.6em;
+}
+/*首页标题标题部分*/
+.bigscreen .title {
+  width:100%;
+  position: absolute;
+  text-align: center;
+  z-index:2;
+  top:-0.5vh;
+}
+.bigscreen .title .return {
+  width: 50px;
+  height: 32px;
+  border-radius: 16px;
+  border: solid 2px #545cab;
+  position: absolute;
+  right: 40px;
+  top: 17px;
+  color: #545cab;
+  text-align: center;
+  cursor: pointer;
+  z-index: 6;
+  display: none;
+}
+.bigscreen .title .titleImg {
+  margin: 0 auto;
+  display: block;
+  width:100%;
+}
+.bigscreen .title .lgTitle {
+  position: absolute;
+  font-size:2.6em;
+  letter-spacing: 4px;
+  text-align: center;
+  z-index: 3;
+  width: 100%;
+  top: 0;
+  color:#27A9FF;
+  line-height: 100px;
+}
+.bigscreen .title .indexTitleSelect{
+  width:100%;
+  text-align: center;
+  position: absolute;
+  bottom:5px;
+}
+.bigscreen .title .indexTitleSelect>div{
+  width:24%;
+  margin-left:38%;
+}
+.bigscreen .title .indexTitleSelect>div>div{
+  float: left;
+  width:49%;
+  color:#000;
+}
+.bigscreen .title .indexTitleSelect>div>.indexSelectCourt{
+  border-right:1px solid #000;
+}
+.bigscreen .title .indexTitleSelect>div>div i{
+  padding-left:5px;
+  cursor: pointer;
+}
+.bigscreen .title .moreTheme{
+  position: absolute;
+  z-index:3;
+  bottom:15%;
+  right:21%;
+}
+.bigscreen .title .moreTheme img{
+  width:160px;
+}
+.bigscreen .title .moreTheme p{
+  position: absolute;
+  top:8px;
+  width:160px;
+  text-align: center;
+}
+.bigscreen .title .moreTheme p span{
+  padding-right:5px;
+}
+.bigscreen .title .moreTheme p i{
+  cursor: pointer;
+}
+/*首页左边部分*/
+.bigscreen .container {
+  width: 100%;
+  margin-top: 10vh;
+  min-height:500px;
+  height:85vh;
+  float: left;
+}
+.bigscreen .container .indexLeft{
+  width: 25%;
+  height:100%;
+  float: left;
+}
+.bigscreen .container>.indexLeft>div,.bigscreen .container>.indexRight>div{
+  margin:0 20px;
+  padding:2vh 1vh;
+  position: relative;
+  border:1px solid rgba(43,179,255,0.48);
+}
+.bigscreen .container .indexLeft .indexCase{
+  height:28vh;
+  margin-bottom:2vh;
+  min-height:150px;
+}
+.bigscreen .container .indexLeft .indexCase .caseNum{
+  height:50px;
+  text-align: center;
+}
+.bigscreen .container .indexLeft .indexCase .caseNum > div{
+  width:48%;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+.bigscreen .container .indexLeft .indexCase .caseNum > div:first-child{
+  float: left;
+}
+.bigscreen .container .indexLeft .indexCase .caseNum > div:last-child{
+  float: right;
+}
+.bigscreen .container .indexLeft .indexCase .caseNum img{
+  width:100%;
+  position: absolute;
+  left: 0;
+}
+.bigscreen .container .indexLeft .indexCase .caseNum p{
+  text-align: center;
+  margin-top:7px;
+}
+.bigscreen .container .indexLeft .indexCase .caseNum p span.specificNum{
+  color:#fff;
+  font-size:1.5em;
+}
+.bigscreen .container .indexLeft .indexCase p span.pieceNum{
+
+}
+.bigscreen .container .indexLeft .indexCase .caseNum>div>span{
+  position: relative;
+  top:5px;
+}
+.bigscreen .container .indexLeft .indexForeignRelatedCases{
+  height:20vh;
+  margin-bottom:2vh;
+  min-height:120px;
+}
+.bigscreen .container .indexLeft .indexForeignRelatedCases .indexColumn{
+  position: absolute;
+  bottom: 20px;
+  height: 16vh;
+  width:calc(100% - 20px);
+  width:-webkit-calc(100% - 20px);
+  width:-moz-calc(100% - 20px);
+}
+.bigscreen .container .indexLeft .indexForeignRelatedCases .indexColumn>div{
+  float: left;
+  height:100%;
+  width:22%;
+  background: url("../img/columnBg.png") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.bigscreen .container .indexLeft .indexForeignRelatedCases .indexColumn>div>div{
+  background-size: cover;
+  width:22%;
+  background-position: center center;
+  position:absolute;
+  bottom: 0;
+}
+.bigscreen .container .indexLeft .indexForeignRelatedCases .indexColumn>div>p,
+.bigscreen .container .indexLeft .indexForeignRelatedCases .indexColumn>div>span{
+  text-align: center;
+  width:22%;
+  position:absolute;
+}
+.bigscreen .container .indexLeft .indexForeignRelatedCases .indexColumn>div>p{
+  bottom: -20px;
+  background: #07216a;
+}
+.bigscreen .container .indexLeft .indexForeignRelatedCases .indexColumn>div>span{
+  top:-23px;
+}
+.bigscreen .container .indexLeft .indexForeignRelatedCases .indexColumn>div .indexColumnRed{
+  background: url("../img/columnRed.png");
+  height:0;
+  width:22%;
+}
+.bigscreen .container .indexLeft .indexForeignRelatedCases .indexColumn>div .indexColumnBlue{
+  background: url("../img/columnRed.png");
+  height:0;
+  width:22%;
+}
+.bigscreen .container .indexLeft .indexForeignRelatedCases .indexColumn>div:not(:last-child){
+  margin-right:4%;
+}
+.bigscreen .container .indexLeft .indexExecutionMonitoring{
+  height:20vh;
+}
+.bigscreen .container .indexLeft .indexExecutionMonitoring .animationBar{
+  height:4.5vh;
+  position: relative;
+}
+.bigscreen .container .indexLeft .indexExecutionMonitoring .animationBar .monitortitle{
+  float: left;
+  position: relative;
+  top:0.6em;
+}
+.bigscreen .container .indexLeft .indexExecutionMonitoring .animationBar .numAPiece{
+  float: right;
+  position: relative;
+  top: 0.4em;
+}
+.bigscreen .container .indexLeft .indexExecutionMonitoring .animationBar .numAPiece b{
+  font-size: 1.5em;
+  color:#fff;
+  padding-right:5px;
+}
+.bigscreen .container .indexLeft .indexExecutionMonitoring .animationBar .animationBarInner{
+  position: absolute;
+  bottom:0;
+  height:3px;
+  width:100%;
+  background: url("../img/dashLine.png") no-repeat;
+  background-size: cover;
+}
+.bigscreen .container .indexLeft .indexExecutionMonitoring .animationBar .animationBarInner>div{
+  position: absolute;
+  top: 0;
+  left:0;
+  height:4px;
+  background-image:linear-gradient(left,rgba(254,137,63,0.00) 0%, #ff4d3f 100%);
+  background-image:-webkit-linear-gradient(left,rgba(254,137,63,0.00) 0%, #ff4d3f 100%);
+  background-image:-moz-linear-gradient(left,rgba(254,137,63,0.00) 0%, #ff4d3f 100%);
+  border-radius:100px;
+}
+.bigscreen .container .indexRight .indexTechnologyCourt{
+  height:20vh;
+  margin-bottom:2vh;
+}
+.bigscreen .container .indexRight .indexTechnologyCourt>.hexagon{
+  width:31%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  top: 4vh;
+}
+.bigscreen .container .indexRight .indexTechnologyCourt>.hexagon:not(:last-child){
+  margin-right:3.5%;
+}
+.bigscreen .container .indexRight .indexTechnologyCourt>.hexagon img{
+  width:100%;
+}
+.bigscreen .container .indexRight .indexTechnologyCourt>.hexagon p,
+.bigscreen .container .indexRight .indexTechnologyCourt>.hexagon span{
+  position: absolute;
+}
+.bigscreen .container .indexRight .indexTechnologyCourt .hexagon p{
+  top:20%;
+  width:100%;
+  text-align: center;
+}
+.bigscreen .container .indexRight .indexTechnologyCourt .hexagon span{
+  bottom: 20%;
+  color:#fff;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size:1.5em;
+}
+.bigscreen .container .indexRight .indexLawEnforcementCar{
+  height:20vh;
+  margin-bottom:2vh;
+}
+.bigscreen .container .indexRight .indexLawEnforcementCar .carsInfo{
+  width:31%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  margin-top:2vh;
+}
+.bigscreen .container .indexRight .indexLawEnforcementCar .carsInfo img{
+  width:100%;
+}
+.bigscreen .container .indexRight .indexLawEnforcementCar .carsInfo:not(:last-child){
+  margin-right:3.5%;
+}
+.bigscreen .container .indexRight .indexLawEnforcementCar .carsInfo p span{
+  color:#fff;
+  font-size:1.3em;
+}
+.bigscreen .container .indexRight .indexLawEnforcementCar .carsInfo p{
+  text-align:center;
+  width:100%;
+}
+.bigscreen .container .indexRight .indexLawEnforcementCar .carsInfo>span{
+  display: block;
+  width:80%;
+  height:40px;
+  margin:0 auto;
+  text-align: center;
+  margin-top: 1vh;
+  background: url("../img/smallRectangle.png") no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+.bigscreen .container .indexRight .indexLawEnforcementCar .carsInfo>span i{
+  position: relative;
+  top:3px;
+}
+.bigscreen .container .indexRight .indexSafetySupervision{
+  height:28vh;
+}
+.bigscreen .container .indexRight .indexSafetySupervision .SafetyInfo .SafetyInfoL img{
+  width:100%;
+}
+.bigscreen .container .indexRight .indexSafetySupervision .SafetyInfo{
+  margin-top:4%;
+  width: 88%;
+  margin-left: 6%;
+  margin-bottom:4%;
+  overflow: hidden;
+}
+.bigscreen .container .indexRight .indexSafetySupervision .SafetyInfo .SafetyInfoL{
+  width:20%;
+  position: relative;
+  text-align: center;
+  float: left;
+}
+.bigscreen .container .indexRight .indexSafetySupervision .SafetyInfo .SafetyInfoL i{
+  position: absolute;
+  top:10%;
+  left:15%;
+  font-size:3em;
+}
+.bigscreen .container .indexRight .indexSafetySupervision .SafetyInfo .SafetyInfoR{
+  float: right;
+  width:75%;
+  height:5vh;
+  margin-top:2vh;
+  border-bottom:1px solid #2bb3ff;
+}
+.bigscreen .container .indexRight .indexSafetySupervision .SafetyInfo .SafetyInfoR p{
+  position: relative;
+  top:-16px;
+  background: #0a266e;
+  display: inline;
+}
+.bigscreen .container .indexRight .indexSafetySupervision .SafetyInfo .SafetyInfoR>span{
+  display: block;
+  position: relative;
+  bottom:1vh;
+  text-align: right;
+  padding-right:10px;
+}
+.bigscreen .container .indexRight .indexSafetySupervision .SafetyInfo .SafetyInfoR>span>span{
+  float: left;
+  position: relative;
+  top:0.4vh;
+}
+.bigscreen .container .indexRight .indexSafetySupervision .SafetyInfo .SafetyInfoR>span i{
+  color:#fff;
+  font-size:1.5em;
+  padding-right:5px;
+}
+.bigscreen .container .indexRight .indexSafetySupervision .SafetyInfo .SafetyInfoR>span i.numberFont{
+  padding-right: 0;
+}
+#casePie{
+  width:21vw;
+  height:22vh;
+  position: relative;
+}
+.indexCase .caseTypePic{
+  position: absolute;
+  left:38%;
+  top:17vh;
+}
+
+.bigscreen .container .indexRight .indexSafetySupervision{}
+
+
+
+/*首页中间地图部分*/
+.bigscreen .container .map{
+  float: left;
+  width: 50%;
+  height: 863px;
+  position: relative;
+}
+.bigscreen .container .map #cont_pro_map{
+  height:90vh;
+  min-height:500px;
+  position: relative;
+  right:25%;
+  top:-80px;
+}
+.bigscreen .container #map{
+  position: relative;
+}
+
+/*首页右边部分*/
+.bigscreen .container .indexRight {
+  width:25%;
+  float: left;
+}
+.bottleLine{
+  height:80%;
+  width:1px;
+  background:#2bb3ff;
+  opacity:0.4;
+  position: absolute;
+  top:2vh;
+}
+.bottleLine::after,.bottleLine::before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 3px;
+  height:3px;
+  background:#2bb3ff;
+}
+.bottleLine.bottleLine1{
+  left:33.45%;
+}
+.bottleLine.bottleLine2{
+  left:66.5%;
+}
+.bottleLine.bottleLine1::before{
+  left:-1px;
+  top:0;
+}
+.bottleLine.bottleLine2::before{
+  left:-1.5px;
+  top:0;
+}
+.bottleLine.bottleLine1::after{
+  bottom:0;
+  left:-1px;
+}
+.bottleLine.bottleLine2::after{
+  left:-1.5px;
+  bottom:0;
+}
+/*适配屏幕*/
+@media (min-width: 1000px)  and (max-width:1199px){
+  .bigscreen .container .map #cont_pro_map{
+    top:-20px;
+  }
+}
+@media (min-width: 1200px)  and (max-width:1299px){
+  .bigscreen .container .map #cont_pro_map{
+    top:-20px;
+  }
+}
+@media (min-width: 1300px)  and (max-width:1399px){
+  .bigscreen .title{
+    top:-2vh;
+  }
+  .bigscreen .title .lgTitle{
+    top:-8px;
+    font-size:2.1em;
+  }
+  .bigscreen .title .moreTheme{
+    right:19%;
+  }
+  .bigscreen .container .map #cont_pro_map{
+    top:-20px;
+  }
+  .bigscreen .container .indexLeft .indexExecutionMonitoring .animationBar{
+    height:5vh;
+  }
+  .bigscreen .container .indexRight .indexSafetySupervision .SafetyInfo .SafetyInfoL i {
+    top: 21%;
+    left: 23%;
+    font-size: 2.5em;
+  }
+  .indexCase .caseTypePic{
+    top: 18.3vh;
+    left:38.6%;
+  }
+  .indexCase .caseTypePic img{
+    width:70px;
+  }
+}
+@media (min-width: 1400px) and (max-width:1479px){
+  .bigscreen .container .map #cont_pro_map{
+    top:-30px;
+  }
+  .bigscreen .title{
+    top:-2vh;
+  }
+}
+/*法院1600*900*/
+@media (min-width: 1480px) and (max-width:1649px){
+  .bigscreen .title{
+    top:-2vh;
+  }
+  .bigscreen .container .indexRight .indexSafetySupervision .SafetyInfo .SafetyInfoL i{
+    left:13%;
+  }
+  .bigscreen .container .map #cont_pro_map{
+    top:-30px;
+  }
+  .indexCase .caseTypePic{
+    top: 18.3vh;
+    left:38.6%;
+  }
+  .indexCase .caseTypePic img{
+    width:75px;
+  }
+  .bigscreen .container .indexRight .indexSafetySupervision .SafetyInfo .SafetyInfoL i{
+    top:12%;
+    left:17%;
+    font-size:2.5em;
+  }
+  .bottleLine{
+    top:3vh;
+  }
+  .bigscreen .container .indexRight .indexSafetySupervision .SafetyInfo .SafetyInfoR>span{
+    bottom:0;
+  }
+}
+@media (min-width: 1650px) and (max-width:1799px){
+  .bigscreen .title{
+    top:-2vh;
+  }
+  .bigscreen .container .indexRight .indexSafetySupervision .SafetyInfo .SafetyInfoL i{
+    left:13%;
+  }
+}
+@media (min-width: 1800px) and (max-width:1899px){
+  .bigscreen .container .map #cont_pro_map{
+    top:-80px;
+  }
+}
+@media (min-width: 1900px) and (max-width:40000px){
+  .bigscreen .title .moreTheme{
+    right:22%;
+  }
+  .bigscreen .container .indexLeft .indexCase .caseNum>div>span{
+    top:11px;
+  }
+  .bigscreen .container .indexLeft .indexCase .caseNum p{
+    margin-top:15px;
+  }
+  .bigscreen .container .indexLeft .indexExecutionMonitoring .animationBar .monitortitle,.bigscreen .container .indexLeft .indexExecutionMonitoring .animationBar .numAPiece{
+    top:1em;
+  }
+  .bigscreen .container .indexRight .indexLawEnforcementCar .carsInfo>span i{
+    top:8px;
+  }
+  .bigscreen .container .indexRight .indexSafetySupervision .SafetyInfo:first-child{
+    margin-top:5vh;
+  }
+  .bigscreen .container .indexRight .indexSafetySupervision .SafetyInfo .SafetyInfoL i{
+    top:15%;
+    left:19%;
+  }
+  .bigscreen .container .indexRight .indexSafetySupervision .SafetyInfo .SafetyInfoR span{
+    bottom: -1.2vh;
+  }
+}

@@ -1,0 +1,306 @@
+body,html {
+  padding: 0;
+  margin: 0;
+  color:#00f1ff;
+  font-family: "微软雅黑";
+}
+i{
+  font-style: normal;
+}
+b{
+  font-weight: normal;
+}
+p{
+  margin:0;
+}
+ul{
+  padding:0;
+  margin:0;
+}
+a{
+  color:#00f1ff;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+a:hover{
+  color:#00F1FF;
+}
+li{
+  list-style: none;
+}
+p,span,b,i{
+  letter-spacing: 2px;
+}
+@font-face
+{
+  font-family: DIN Alternate;
+  src: url('fonts/DIN Alternate Bold.ttf')
+}
+.numberFont{
+  font-family: DIN Alternate;
+}
+/*公共css*/
+.indexTitle{
+  width:100%;
+  margin:0 auto;
+  position: absolute;
+  left:-1px;
+  text-align: center;
+  letter-spacing: 2px;
+  top:-14px;
+  z-index: 10;
+}
+.indexTitle p{
+  margin:0 auto;
+  border:1px solid #2bb3ff;
+  width:100px;
+  font-size:1.2em;
+  background:#0a266e;
+}
+.indexPage .indexTitle p:hover{
+  background:#00F1FF;
+}
+.indexPage .indexTitle p:hover a{
+  color:#0A2976;
+}
+.erjiTop {
+  padding: 2vh 1vw 3vh 1vw;
+}
+.animationToolBar{
+  width:100%;
+  height:5px;
+  background: #0a266e;
+  position: relative;
+}
+.animationToolBar .animationBarAble{
+  position: absolute;
+  top: 0;
+  left:0;
+  height:5px;
+}
+.animationBar:nth-child(odd) .animationToolBar .animationBarAble{
+  background-image: linear-gradient(90deg, #f85a40 0%, #f89954 100%);
+}
+.animationBar:nth-child(even) .animationToolBar .animationBarAble{
+  background-image: linear-gradient(-90deg, #0079db 0%, #05edff 100%);
+}
+.todayCaseAcceptance,.todayCaseClosed{
+  position: absolute;
+  width:160px;
+  height:75px;
+  text-align: center;
+  background: url("../img/bigRectangle.png") no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  top:5vh;
+}
+.todayCaseAcceptance{
+  left:15%;
+}
+.todayCaseClosed{
+  right:15%;
+}
+.todayCaseAcceptance p,.todayCaseClosed p{
+  color:#ff713b;
+  font-size:1.8em;
+  position: relative;
+  top:5px;
+}
+.todayCaseAcceptance span,.todayCaseClosed span{
+  font-size:1.2em;
+  position: relative;
+  top:2px;
+}
+.footerLine{
+  width:98%;
+  margin-left:1%;
+  height: 1px;
+  position: absolute;
+}
+.footerLine.footerLine1{
+  bottom:3vh;
+  background:#1379b3;
+}
+.footerLine.footerLine2{
+  bottom:2vh;
+  background:#2bb3ff;
+}
+.footerLine.footerLine::after,.footerLine.footerLine::before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 5px;
+  height:5px;
+}
+.footerLine.footerLine1::before{
+  background:#1379b3;
+  left:0;
+  top:-2px;
+}
+.footerLine.footerLine1::after{
+  background:#1379b3;
+  right:0;
+  top:-2px;
+}
+.footerLine.footerLine2::before{
+  background:#2bb3ff;
+  left:0;
+  top:-2px;
+}
+.footerLine.footerLine2::after{
+  background:#2bb3ff;
+  right:0;
+  top:-2px;
+}
+/*二级页面*/
+.bigscreen {
+  width: 100%;
+  height: 100vh;
+  background: #0351cf url("../img/mainBg.png") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  overflow: hidden;
+}
+.bigscreen .top {
+  overflow: hidden;
+}
+.bigscreen .top .title {
+  background-image: linear-gradient(90deg, #2bb3ff 0%, rgba(43, 179, 255, 0) 100%);
+  width: 70vw;
+  height: 5vh;
+  line-height: 5vh;
+  font-size: 1.5vw;
+  color: #ffffff;
+  padding-left: 1vw;
+  float: left;
+}
+.bigscreen .top .title span {
+  font-size: 1.1vw;
+}
+.bigscreen .top .timeChose {
+  float: left;
+  width: 20vw;
+  height: 5vh;
+  position: relative;
+}
+.bigscreen .top .return {
+  float: right;
+  position: relative;
+  width: 4vw;
+  height: 5vh;
+  background: url("../img/return.png") no-repeat;
+  background-size: contain;
+  background-position: right;
+  cursor: pointer;
+  margin-left: 0.3vw;
+}
+.bigscreen .top .return a{
+  display: block;
+  position: absolute;
+  top:0;
+  left:0;
+  width: 4vw;
+  height: 5vh;
+
+}
+.erjiXiala>div{
+  width:40%;
+  float: left;
+  height:3vh;
+  margin-top:1vh;
+  line-height:3vh;
+}
+.erjiXiala .erjiXialaL{
+  text-align: right;
+  width:55%;
+  padding-right:2%;
+  border-right:1px solid rgba(43,179,255,0.48);
+}
+.erjiXiala .erjiXialaR{
+  padding-left: 2%;
+}
+.erjiXiala .erjiXialaM{
+  text-align:center;
+  width:100%;
+}
+.erjiXiala >div i{
+  cursor: pointer;
+  margin-left: 5px;
+}
+@keyframes rotating{
+  from{transform:rotate(0)}
+  to{transform:rotate(-360deg)}
+}
+.rotating{
+  width:100%;
+  -moz-animation: rotating 2s linear infinite;
+  -webkit-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation:rotating 2s linear infinite;
+}
+@media (min-width: 1000px) {
+  body,html{
+    font-size:80%;
+  }
+  p,span,b,i{
+    letter-spacing: 1px;
+  }
+  .indexTitle{
+    top:-11px;
+  }
+}
+@media (min-width: 1200px) {
+  body,html{
+    font-size:88%;
+  }
+  .indexTitle{
+    top:-11px;
+  }
+}
+@media (min-width: 1300px) {
+  body,html{
+    font-size:90%;
+  }
+  p,span,b,i{
+    letter-spacing: 1px;
+  }
+  .indexTitle{
+    top:-11px;
+  }
+  .todayCaseAcceptance p, .todayCaseClosed p{
+    top:0.5em;
+  }
+  .todayCaseAcceptance span, .todayCaseClosed span{
+    top:0.6em;
+  }
+}
+@media (min-width: 1400px) {
+  body,html{
+    font-size:95%;
+  }
+  p,span,b,i{
+    letter-spacing: 2px;
+  }
+  .indexTitle{
+    top:-14px;
+  }
+}
+@media (min-width: 1500px) {
+  body,html{
+    font-size:95%;
+  }
+  .todayCaseAcceptance p, .todayCaseClosed p{
+    top:0.3em;
+  }
+  .todayCaseAcceptance span, .todayCaseClosed span{
+    top:0.3em;
+  }
+}
+@media (min-width: 1600px) {
+  body,html{
+    font-size:100%;
+  }
+}

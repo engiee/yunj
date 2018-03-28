@@ -1,0 +1,249 @@
+.caseContainer{
+    width:98vw;
+    margin:0 1vw;
+}
+.caseContainer>div{
+    float: left;
+    height:84vh;
+}
+.caseContainer .caseLeft,.caseRight{
+    width:25%;
+    float: left;
+}
+.caseContainer .caseLeft>div,.caseRight>div,.caseTrend{
+    border:1px solid rgba(43,179,255,0.48);
+    position: relative;
+    padding:2vh 1vh;
+}
+.caseContainer .caseAcceptNum{
+    height:8vh;
+    margin-bottom: 2vh;
+}
+.caseContainer .caseAcceptNum img{
+    width:100%;
+    margin-top:1vh;
+}
+.caseContainer .caseAcceptNum>p{
+    width:100%;
+    text-align:center;
+    color:#fff;
+    position: absolute;
+    bottom:2.5vh;
+    font-size:2.4em;
+}
+.caseContainer .caseAcceptNum>p span,.caseContainer .caseAcceptNum>p i{
+    font-size:0.4em;
+    color:#00f1ff;
+}
+.caseContainer .caseAcceptNum>p span{
+    position: relative;
+    bottom:1em;
+}
+.caseContainer .caseAcceptNum>p i{
+    margin-left:5px;
+}
+.caseContainer .firstInstanceRanking{
+    height:38vh;
+    margin-bottom: 2vh;
+}
+.caseContainer .firstInstanceRanking .animationBar p{
+    margin-bottom:4px;
+}
+.caseContainer .firstInstanceRanking .animationBar p b{
+    float: right;
+}
+.caseContainer .firstInstanceRanking .animationBar p b span{
+    color:#fff;
+    margin-right:4px;
+}
+.caseContainer .firstInstanceRanking .animationBarBox li{
+    height:4vh;
+}
+.caseContainer .caseLeft .caseAcceptStatistics,.firstTenParty,.caseTrend{
+    height:23vh;
+}
+.caseContainer .caseLeft .caseAcceptStatistics .caseStatisticsTitle{
+    height:25px;
+    line-height:25px;
+    position: relative;
+    margin-top:2vh;
+    color:#fff;
+}
+.caseContainer .caseLeft .caseAcceptStatistics .caseStatisticsTitle .caseType{
+    width:63%;
+    background:#00a5d1;
+    float: left;
+    padding-left:2%;
+}
+.caseContainer .caseLeft .caseAcceptStatistics .caseStatisticsTitle .caseNumber{
+    background:#cf452c;
+    width:32%;
+    text-align: right;
+    padding-right:2%;
+    float: right;
+}
+.caseContainer .caseLeft .caseAcceptStatistics ul li{
+    height:2.65vh;
+    line-height:2.65vh;
+    font-size:1.2em;
+}
+.caseContainer .caseLeft .caseAcceptStatistics ul li:not(:last-child){
+    border-bottom:1px solid rgba(43,179,255,0.4);
+}
+.caseContainer .caseLeft .caseAcceptStatistics ul li b{
+    float: right;
+}
+.caseContainer .caseLeft .caseAcceptStatistics ul li b i{
+    color:#fff;
+}
+/*case中间部分*/
+.caseContainer .caseMiddleMap{
+    width:calc(50% - 20px);
+    width:-webkit-calc(50% - 20px);
+    width:-moz-calc(50% - 20px);
+}
+.caseContainer .caseMiddleMap .caseMap{
+    height:58.4vh;
+    position: relative;
+}
+.caseContainer .caseMiddleMap #caseMap,#transferMap{
+    width:50vw;
+    height:58.4vh;
+}
+#transferMap{
+    position: absolute;
+    top:0;
+    left:0;
+}
+.caseContainer .caseMiddleMap{
+    padding:0 10px;
+}
+.caseContainer .caseMiddleMap .caseTrend ul li{
+    border:1px solid #00a5d1;
+    width:12%;
+    height:1.2em;
+    line-height:1.2em;
+    padding:2px 0;
+    font-size:1.2em;
+    margin-right:2%;
+    float: left;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    z-index: 9;
+}
+.caseContainer .caseMiddleMap .caseTrend ul li i{
+    position: absolute;
+    width:10px;
+    height:10px;
+    transform:rotate(45deg);
+    -ms-transform:rotate(45deg); 	/* IE 9 */
+    -moz-transform:rotate(45deg); 	/* Firefox */
+    -webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+    -o-transform:rotate(45deg); 	/* Opera */
+    bottom:-6px;
+    right:-6px;
+    background: #073291;
+    border-left:1px solid #00a5d1;
+}
+.caseContainer .caseMiddleMap .caseTrend ul li.on{
+    background:#00a5d1;
+    border: 1px solid transparent;
+    color:#fff;
+}
+.caseContainer .caseMiddleMap .caseTrend #caseTrendChart{
+    height:29vh;
+    width:55vw;
+    position: relative;
+    top:-4vh;
+    left:-4vw;
+}
+.todayCaseAcceptance{
+    left: 28%;
+    z-index:2;
+}
+.todayCaseClosed {
+    right: 28%;
+    z-index:2;
+}
+/*适配屏幕*/
+@media (min-width: 1000px) {
+    body,html{
+    }
+}
+@media (min-width: 1200px) {
+    .caseContainer .caseAcceptNum img{
+        margin-top:0;
+    }
+    .caseContainer .caseLeft .caseAcceptStatistics .caseStatisticsTitle{
+        margin-top:1vh;
+    }
+}
+@media (min-width: 1300px) {
+    .caseContainer .caseAcceptNum img{
+        margin-top:0;
+    }
+    .caseContainer .caseLeft .caseAcceptStatistics .caseStatisticsTitle{
+        margin-top:1vh;
+    }
+    .caseContainer .firstInstanceRanking .animationBarBox li {
+        height:3.9vh;
+    }
+    .caseContainer .firstInstanceRanking .animationBar p {
+        margin-bottom:2px;
+    }
+    .todayCaseAcceptance{
+        left: 22%;
+    }
+    .todayCaseClosed {
+        right: 22%;
+    }
+    .todayCaseAcceptance p, .todayCaseClosed p{
+        top:0.5em;
+    }
+    .todayCaseAcceptance span, .todayCaseClosed span{
+        top:0.6em;
+    }
+    .caseContainer .caseMiddleMap .caseTrend ul li{
+        position: relative;
+        top:0.5vh;
+    }
+}
+@media (min-width: 1400px) {
+    .caseContainer .caseAcceptNum img{
+        margin-top:1vh;
+    }
+    .caseContainer .caseLeft .caseAcceptStatistics .caseStatisticsTitle{
+        margin-top:2vh;
+    }
+    .caseContainer .firstInstanceRanking .animationBarBox li {
+        height:4vh;
+    }
+    .caseContainer .firstInstanceRanking .animationBar p {
+        margin-bottom:5px;
+    }
+    .todayCaseAcceptance p, .todayCaseClosed p{
+        top:0.3em;
+    }
+    .todayCaseAcceptance span, .todayCaseClosed span{
+        top:0.3em;
+    }
+    .caseContainer .caseAcceptNum img{
+        margin-top:0.5vh;
+    }
+    .caseContainer .caseAcceptNum>p{
+        bottom:1.5vh;
+    }
+}
+@media (min-width: 1600px) {
+    body,html{
+    }
+}
+@media (min-width: 1700px) {
+    .caseContainer .caseAcceptNum>p{
+        bottom: 3vh;
+    }
+}
+@media (min-width: 1900px) {
+
+}

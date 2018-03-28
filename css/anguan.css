@@ -1,0 +1,480 @@
+.anguan .agMid {
+  width: 98vw;
+  height: 20vh;
+  margin-top: 2vh;
+}
+.anguan .agMid .contaniner {
+  width: 30%;
+  float: left;
+  height: 20vh;
+  background: url("../img/agMid.png") no-repeat;
+  background-size: contain;
+  overflow: hidden;
+  margin-right: 5%;
+}
+.anguan .agMid .contaniner .pic {
+  position: relative;
+  float: left;
+  width: 5vw;
+  height: 10vh;
+  margin: 2vh 0 0 6vw;
+}
+.anguan .agMid .contaniner .pic img {
+  position: absolute;
+  width:100%;
+}
+.anguan .agMid .contaniner .pic i {
+  position: absolute;
+  font-size: 3vw;
+  line-height: 11vh;
+  margin-left: 0.8vw;
+}
+.anguan .agMid .contaniner .midtxt {
+  float: left;
+  margin: 2vh 0 0 1vw;
+}
+.anguan .agMid .contaniner .midtxt p {
+  line-height: 4vh;
+}
+.anguan .agMid .contaniner .midtxt p:last-child {
+  line-height: 8vh;
+}
+.anguan .agMid .contaniner .midtxt p:last-child span {
+  font-family: DIN Alternate;
+  font-weight: bold;
+  font-size: 3vw;
+  color: white;
+  margin-right: 6px;
+}
+.anguan .agMid .contaniner:last-child {
+  margin-right: 0;
+}
+.anguan .botom {
+  width: 100%;
+  height: 63vh;
+}
+.anguan .botom .list {
+  width: 30%;
+  margin-right: 2%;
+  float: left;
+  position: relative;
+  border:1px solid rgba(43,179,255,0.48);
+  height: 63vh;
+}
+.anguan .botom .list .zxtitle {
+  position: absolute;
+  width: 10vw;
+  height: 4vh;
+  line-height: 4vh;
+  left: 50%;
+  top: -2vh;
+  color: #00f1ff;
+  border:1px solid rgba(43,179,255,0.48);
+  background: #0a2f8c;
+  text-align: center;
+  margin-left: -5vw;
+  z-index: 9;
+}
+.anguan .botom .list .cont {
+  width: 96%;
+  margin: 0 auto;
+  font-size: 1vw;
+}
+.anguan .botom .list .cont p {
+  width: 100%;
+  overflow: visible;
+  margin-top: 3px;
+  height:6vh;
+  line-height: 6vh;
+}
+.anguan .botom .list .cont p span {
+  text-align: left;
+  letter-spacing:0;
+}
+.anguan .botom .list .cont p span:last-child {
+  float: right;
+  letter-spacing:0;
+}
+.anguan .botom .list .cont .contlist {
+  overflow: visible;
+  width: 100%;
+}
+.anguan .botom .list .cont .contlist .left {
+  float: left;
+  width: 45%;
+}
+.anguan .botom .list .cont .contlist .left ul li {
+  line-height: 4vh;
+}
+.anguan .botom .list .cont .contlist .left ul li span {
+  width: 15%;
+  color: white;
+  letter-spacing:0;
+  font-family: DIN Alternate;
+}
+.anguan .botom .list .cont .contlist .left ul li .orleft {
+  display: inline-block;
+  width: 80%;
+  height: 1vh;
+  background: #07216a;
+  color: #00f1ff;
+  position: relative;
+  float: right;
+  margin-top: 1vh;
+}
+.anguan .botom .list .cont .contlist .left ul li .orleft span {
+  width: 0;
+  height: 1vh ;
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  top: 0;
+  background-image: linear-gradient(-90deg, #f85a40 0%, #f89954 100%);
+}
+.anguan .botom .list .cont .contlist .mid {
+  float: left;
+  width: 10%;
+  margin-top:6vh;
+  background: #1d3779;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.5);
+}
+.anguan .botom .list .cont .contlist .mid ul {
+  margin-top: -2px;
+}
+.anguan .botom .list .cont .contlist .mid ul li {
+  text-align: center;
+  line-height: 4vh;
+}
+.anguan .botom .list .cont .contlist .right {
+  float: left;
+  width: 45%;
+}
+.anguan .botom .list .cont .contlist .right ul li {
+  line-height: 4vh;
+}
+.anguan .botom .list .cont .contlist .right ul li span {
+  color: white;
+  font-family: DIN Alternate;
+  width: 15%;
+  letter-spacing:0;
+}
+.anguan .botom .list .cont .contlist .right ul li .oright {
+  display: inline-block;
+  width: 80%;
+  height: 1vh;
+  background: #07216a;
+  position: relative;
+  float: left;
+  margin-top: 1vh;
+}
+.anguan .botom .list .cont .contlist .right ul li .oright span {
+  width: 0;
+  height: 1vh ;
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(-90deg, #05edff 0%, #0079db 100%);
+}
+.anguan .botom .map {
+  width: 35vw;
+  height: 63vh;
+  margin-right: 1%;
+  float: left;
+  position: relative;
+}
+.anguan .botom .map .mapArea {
+  position: absolute;
+  height: 70vh;
+  top: -7vh;
+  width: 38vw;
+  left: -1.5vw;
+}
+.anguan .botom .map .length {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  color: white;
+  font-size: 1vw;
+}
+.anguan .botom .map .length img {
+  display: inline-block;
+  width: 1vw;
+  margin-right: 0.5vw;
+}
+.anguan .botom .scope {
+  width: 30%;
+  float: right;
+}
+.anguan .botom .scope .survey {
+  height: 20vh;
+  margin-bottom: 3vh;
+  position: relative;
+  border:1px solid rgba(43,179,255,0.48);
+  width: 100%;
+}
+.anguan .botom .scope .survey .suCon {
+  width: 92%;
+  margin: auto;
+  margin-top: 3vh;
+}
+.anguan .botom .scope .survey .suCon .sucotop {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 1vh;
+}
+.anguan .botom .scope .survey .suCon .sucotop .suptleft {
+  width: 47%;
+  float: left;
+}
+.anguan .botom .scope .survey .suCon .sucotop .suptleft p {
+  line-height: 3vh;
+  font-size: 1vw;
+}
+.anguan .botom .scope .survey .suCon .sucotop .suptleft p .stle {
+  font-size: 1vw;
+  width: 50%;
+  display: inline-block;
+  letter-spacing: 0.1vw;
+}
+.anguan .botom .scope .survey .suCon .sucotop .suptleft p .bline {
+  display: inline-block;
+  border-bottom: 1px solid rgba(43, 179, 255, 0.4);
+  width: 50%;
+}
+.anguan .botom .scope .survey .suCon .sucotop .suptleft .numd {
+  text-align: center;
+  border-bottom: 1px solid rgba(43, 179, 255, 0.4);
+}
+.anguan .botom .scope .survey .suCon .sucotop .suptleft .numd span {
+  color: white;
+  font-family: DIN Alternate;
+  font-size: 1.5vw;
+  margin: 0 3px;
+}
+.anguan .botom .scope .survey .suCon .sucotop .suptleft .numd span sup {
+  color: #00f1ff;
+  font-size: 0.8vw;
+}
+.anguan .botom .scope .survey .suCon .sucotop .suptmid {
+  width: 4%;
+  text-align: center;
+  float: left;
+  padding-left: 2%;
+}
+.anguan .botom .scope .survey .suCon .sucotop .suptmid .dian {
+  width: 3px;
+  height: 3px;
+  background: rgba(43, 179, 255, 0.4);
+}
+.anguan .botom .scope .survey .suCon .sucotop .suptmid .line {
+  width: 1px;
+  height: 6.5vh;
+  background: rgba(43, 179, 255, 0.4);
+  margin-left: 1px;
+}
+.anguan .botom .scope .getout {
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  border:1px solid rgba(43,179,255,0.48);
+}
+.anguan .botom .scope .getout .gecon {
+  width: 80%;
+  margin: auto;
+  font-size: 1vw;
+}
+.anguan .botom .scope .getout .gecon .fiLi {
+  margin-top: 3vh;
+  overflow: hidden;
+}
+.anguan .botom .scope .getout .gecon .fiLi .xt {
+  width: 47%;
+  float: left;
+}
+.anguan .botom .scope .getout .gecon .fiLi .xt .iconfont {
+  float: left;
+  background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#f85a40), to(#f89954));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5vw;
+  margin-right: 1vw;
+}
+.anguan .botom .scope .getout .gecon .fiLi .xt .xtxt {
+  float: left;
+  width: 56%;
+}
+.anguan .botom .scope .getout .gecon .fiLi .xt .xtxt span {
+  font-family: DIN Alternate;
+  color: white;
+  font-size: 1.5vw;
+}
+.anguan .botom .scope .getout .gecon .fiLi .suptmid {
+  width: 4%;
+  text-align: center;
+  float: left;
+  padding-left: 1%;
+}
+.anguan .botom .scope .getout .gecon .fiLi .suptmid .dian {
+  width: 3px;
+  height: 3px;
+  background: rgba(43, 179, 255, 0.4);
+}
+.anguan .botom .scope .getout .gecon .fiLi .suptmid .line {
+  width: 1px;
+  height: 5vh;
+  background: rgba(43, 179, 255, 0.4);
+  margin-left: 1px;
+}
+.ReferenceLine{
+  display: inline-block;
+  width:80%;
+  line-height:6vh;
+  height:8px;
+  position: relative;
+}
+.ReferenceLineL{
+  float: right;
+}
+.ReferenceLineR{
+  float: left;
+}
+.ReferenceLine b{
+  display: inline-block;
+  width:1px;
+  background: rgba(43, 179, 255, 0.4);
+  height:8px;
+  float: right;
+  position: absolute;
+  top:0;
+}
+.ReferenceLine.ReferenceLineL b{
+  float: right;
+}
+.ReferenceLine.ReferenceLineR b{
+  float: left;
+}
+.ReferenceLine b:first-child{
+  left:0;
+}
+.ReferenceLine b:nth-child(2){
+  left:25%;
+}
+.ReferenceLine b:nth-child(3){
+  left:50%;
+}
+.ReferenceLine b:nth-child(4){
+  left:75%;
+}
+.ReferenceLine b:nth-child(5){
+  left:100%;
+}
+.ReferenceLineL b:first-child::before{
+  content: '100%';
+  font-family: DIN Alternate;
+  position: absolute;
+  top:-2.4em;
+  left:-1em;
+}
+.ReferenceLineL b:nth-child(2)::before{
+  content: '75%';
+  font-family: DIN Alternate;
+  position: absolute;
+  top:-2.4em;
+  left:-0.8em;
+}
+.ReferenceLineL b:nth-child(3)::before{
+  content: '50%';
+  font-family: DIN Alternate;
+  position: absolute;
+  top:-2.4em;
+  left:-0.8em;
+}
+.ReferenceLineL b:nth-child(4)::before{
+  content: '25%';
+  font-family: DIN Alternate;
+  position: absolute;
+  top:-2.4em;
+  left:-0.8em;
+}
+.ReferenceLineL b:nth-child(5)::before{
+  content: '0';
+  font-family: DIN Alternate;
+  position: absolute;
+  top:-2.4em;
+  left:-0.2em;
+}
+.ReferenceLineR b:first-child::before{
+  content: '0';
+  font-family: DIN Alternate;
+  position: absolute;
+  top:-2.4em;
+  left:-0.2em;
+}
+.ReferenceLineR b:nth-child(2)::before{
+  content: '25%';
+  font-family: DIN Alternate;
+  position: absolute;
+  top:-2.4em;
+  left:-0.8em;
+}
+.ReferenceLineR b:nth-child(3)::before{
+  content: '50%';
+  font-family: DIN Alternate;
+  position: absolute;
+  top:-2.4em;
+  left:-0.8em;
+}
+.ReferenceLineR b:nth-child(4)::before{
+  content: '75%';
+  font-family: DIN Alternate;
+  position: absolute;
+  top:-2.4em;
+  left:-0.8em;
+}
+.ReferenceLineR b:nth-child(5)::before{
+  content: '100%';
+  font-family: DIN Alternate;
+  position: absolute;
+  top:-2.4em;
+  left:-1em;
+}.anguan .botom .list .cont p.referenceP {
+   width: 100%;
+   overflow: visible;
+   margin-top: 3vh;
+   height:3vh;
+   line-height: 3vh;
+}
+@media (min-width:1000px) and ( max-width: 1299px){
+
+}
+@media (min-width:1300px) and ( max-width: 1399px){
+  .anguan .agMid .contaniner .pic i{
+    margin-left:1vw;
+    line-height:10vh;
+  }
+}
+@media (min-width:1400px) and ( max-width: 1499px){
+
+}
+@media (min-width:1500px) and ( max-width: 1699px){
+
+}
+@media (min-width:1699px) and ( max-width: 1799px){
+
+}
+
+
+@media (max-width:40000px) and ( min-width: 1800px) {
+  .anguan .agMid .contaniner .midtxt p:last-child{
+    line-height:5vh;
+  }
+  .anguan .agMid .contaniner .pic{
+    margin:1.5vh 0 0 6vh;
+  }
+  .anguan .agMid .contaniner .pic i {
+    font-size: 3vw;
+    line-height: 9vh;
+    margin-left: 1vw;
+  }
+}
