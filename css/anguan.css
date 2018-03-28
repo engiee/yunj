@@ -458,9 +458,11 @@
 
 }
 @media (min-width:1500px) and ( max-width: 1699px){
-
+  .anguan .agMid .contaniner .pic i {
+    font-size: 3.4vw;
+  }
 }
-@media (min-width:1699px) and ( max-width: 1799px){
+@media (min-width:1700px) and ( max-width: 1799px){
 
 }
 
