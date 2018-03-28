@@ -163,7 +163,7 @@ caseoption = {
         }
         ],
         right:'5%',
-        top:'-5px',
+        top:'0px',
         textStyle:{
             color:'auto'
         }
