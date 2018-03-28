@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0">
+    <title>执行查控</title>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/zxck.css"/>
+    <link rel="stylesheet" href="css/font/iconfont.css">
+</head>
+<body>
+    <div class="bigscreen">
+        <div class="zxck erjiTop">
+            <div class="top">
+                <div class="title">执行查控丨<span>福建法院大数据服务平台</span></div>
+                <div class="timeChose">
+                    <div class="footerLine footerLine1" style="bottom:1px;width: 100%;"></div>
+                    <div class="footerLine footerLine2" style="bottom:0;top:1px;width:100%;"></div>
+                    <div class="erjiXiala">
+                        <div class="erjiXialaM"><span>福建法院</span><i class="iconfont">&#xe6b9;</i></div>
+                    </div>
+                </div>
+                <div class="return"><a href="home.html"></a></div>
+            </div>
+            <div class="midle">
+                <div class="midNums">
+                    <p class="miText"><span>今年案件累计</span><span>约5万件</span></p>
+                    <p class="txtNums"><span class="ddw">5<span class="dw">万</span></span><span class="ddw">2345<span class="xda">件</span></span></p>
+                </div>
+                <div class="midNums">
+                    <p class="miText"><span>今年发出协查次数</span><span>约1425万件</span></p>
+                    <p class="txtNums"><span class="ddw">5<span class="dw">万</span></span><span class="ddw">2345<span class="xda">件</span></span></p>
+                </div>
+                <div class="midNums">
+                    <p class="miText"><span>今年执行申请标的金额</span><span>约38亿元</span></p>
+                    <p class="txtNums"><span class="ddw">35<span class="dw">亿</span></span><span class="ddw">1235<span class="dw">万</span></span><span class="ddw">2345<span class="xda">件</span></span></p>
+                </div>
+                <div class="midNums">
+                    <p class="miText"><span>累计公开被执行人</span><span>约212万人</span></p>
+                    <p class="txtNums"><span class="ddw">35<span class="dw">亿</span></span><span class="ddw">1235<span class="dw">万</span></span><span class="ddw">2345<span class="xda">件</span></span></p>
+                </div>
+                <div class="midNums">
+                    <p class="miText"><span>失信被执行人</span><span>约212万人</span></p>
+                    <p class="txtNums"><span class="ddw">5<span class="dw">万</span></span><span class="ddw">2345<span class="xda">件</span></span></p>
+                </div>
+            </div>
+            <div class="zxMain">
+                <div class="zxMainLeft">
+                    <div class="indexTitle"><p style="width:290px;">申请标的金额/执行到位金额</p></div>
+                    <div class="zxcontainer">
+                        <div class="line" id="line"></div>
+                    </div>
+                </div>
+                <div class="zxMainRight">
+                    <div class="indexTitle"><p style="width:150px;">执行案件排名</p></div>
+                    <div class="zxrList">
+                        <!--<div class="listNums">
+                            <div><span class="on">数量</span><span>金额</span></div>
+                        </div>-->
+                        <div class="listCon">
+                            <div class="liststar">
+                                <p><span>01.&nbsp;福州</span><span class="numps"><span>3,2977</span>件</span></p>
+                                <p><span class="proportion"></span></p>
+                            </div>
+                            <div class="liststar">
+                                <p><span>02.&nbsp;厦门</span><span class="numps"><span>3,2977</span>件</span></p>
+                                <p><span class="proportion"></span></p>
+                            </div>
+                            <div class="liststar">
+                                <p><span>03.&nbsp;莆田</span><span class="numps"><span>3,2977</span>件</span></p>
+                                <p><span class="proportion"></span></p>
+                            </div>
+                            <div class="liststar">
+                                <p><span>04.&nbsp;泉州</span><span class="numps"><span>3,2977</span>件</span></p>
+                                <p><span class="proportion"></span></p>
+                            </div>
+                            <div class="liststar">
+                                <p><span>05.&nbsp;漳州</span><span class="numps"><span>3,2977</span>件</span></p>
+                                <p><span class="proportion"></span></p>
+                            </div>
+                            <div class="liststar">
+                                <p><span>06.&nbsp;龙岩</span><span class="numps"><span>3,2977</span>件</span></p>
+                                <p><span class="proportion"></span></p>
+                            </div>
+                            <div class="liststar">
+                                <p><span>07.&nbsp;三明</span><span class="numps"><span>3,2977</span>件</span></p>
+                                <p><span class="proportion"></span></p>
+                            </div>
+                            <div class="liststar">
+                                <p><span>08.&nbsp;南平</span><span class="numps"><span>3,2977</span>件</span></p>
+                                <p><span class="proportion"></span></p>
+                            </div>
+                            <div class="liststar">
+                                <p><span>09.&nbsp;宁德</span><span class="numps"><span>3,2977</span>件</span></p>
+                                <p><span class="proportion"></span></p>
+                            </div>
+                            <div class="liststar">
+                                <p><span>10.&nbsp;平潭</span><span class="numps"><span>3,2977</span>件</span></p>
+                                <p><span class="proportion"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--执行案件收结案-->
+            <div class="botCon">
+                <div class="botLeft">
+                    <div class="indexTitle"><p style="width:160px;">执行案件收结案</p></div>
+                    <div class="zxcase" id="zxcase"></div>
+                </div>
+                <div class="botRight">
+                    <div class="indexTitle"><p style="width:230px;">执行申请标的金额地区</p></div>
+                    <div class="sum"  id="sum"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footerLine footerLine1"></div>
+    <div class="footerLine footerLine2"></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/echarts.js"></script>
+    <script src="js/zxck.js"></script>
+    <script src="js/bigscreen.js"></script>
+    <script>
+        $(".zxck .zxMain .zxMainLeft .zxcontainer .list ul li").click(function(){
+            $(".zxck .zxMain .zxMainLeft .zxcontainer .list ul li").removeClass("on");
+            $(this).addClass("on");
+        });
+        $(".zxck .zxMain .zxMainRight .zxrList .listNums div span").click(function(){
+            $(".zxck .zxMain .zxMainRight .zxrList .listNums div span").removeClass("on");
+            $(this).addClass("on");
+        });
+    </script>
+</body>
+</html>

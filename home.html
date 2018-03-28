@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0">
+    <title>福建法院大数据服务平台</title>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/bigscreen.css"/>
+    <link rel="stylesheet" href="css/fonts/iconfont.css"/>
+</head>
+<body>
+<div class=""></div>
+<div class="bigscreen indexPage">
+    <div class="title">
+        <img class="titleImg" src="img/indexTitle.png"/>
+        <div class="lgTitle">福建法院大数据服务平台</div>
+        <div class="indexTitleSelect">
+            <div>
+            <div class="indexSelectCourt">
+                 <span>福建法院</span><i class="iconfont">&#xe6b9;</i>
+            </div>
+            <div class="indexSelectYears">
+                <span>2018年</span><i class="iconfont">&#xe6b9;</i>
+            </div>
+            </div>
+        </div>
+        <div class="moreTheme">
+            <img src="img/moreTheme.png" alt="">
+            <p><span>更多主题</span><i class="iconfont">&#xe6b9;</i></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="indexLeft" style="">
+            <!--案件-->
+            <div class="indexCase">
+                <div class="indexTitle"><p><a href="case.html">案&nbsp;&nbsp;&nbsp;&nbsp;件</a></p></div>
+                <div class="caseNum">
+                    <div>
+                        <img src="img/rectangle.png" alt="">
+                        <span>收案数</span>
+                        <p><span class="specificNum numberFont">15<i class="topWan">万</i>8496</span><span class="pieceNum"> 件</span></p>
+                    </div>
+                    <div>
+                        <img src="img/rectangle.png" alt="">
+                        <span>收案数</span>
+                        <p><span class="specificNum numberFont">08<i class="topWan">万</i>8389</span><span class="pieceNum"> 件</span></p>
+                    </div>
+                </div>
+                <div class="caseTypePic"><img src="img/caseTypePie.png" alt=""></div>
+                <div id="casePie">
+
+                </div>
+            </div>
+            <!--涉外案件-->
+            <div class="indexForeignRelatedCases">
+                <div class="indexTitle"><p><a href="#">涉外案件</a></p></div>
+                <div class="indexColumn">
+                    <div>
+                        <span>204件</span>
+                        <div class="indexColumnRed"></div>
+                        <p>涉外</p>
+                    </div>
+                    <div>
+                        <span>204件</span>
+                        <div class="indexColumnBlue"></div>
+                        <p>涉台</p>
+                    </div>
+                    <div>
+                        <span>204件</span>
+                        <div class="indexColumnRed"></div>
+                        <p>涉港</p>
+                    </div>
+                    <div>
+                        <span>204件</span>
+                        <div class="indexColumnBlue"></div>
+                        <p>涉澳</p>
+                    </div>
+                </div>
+            </div>
+            <!--执行监控-->
+            <div class="indexExecutionMonitoring">
+                <div class="indexTitle"><p><a href="zxck.html">执行监控</a></p></div>
+                <!--<div class="cornerHighlight">-->
+                    <!--<i class="cornerTL"></i><i class="cornerTR"></i><i class="cornerBL"></i><i class="cornerBR"></i>-->
+                    <!--<div class="verticalLine"></div>-->
+                <!--</div>-->
+
+                <div class="animationBar">
+                    <p><span class="monitortitle">案件累计</span><span class="numAPiece"><b class="numberFont">2<i class="topWan">万</i>3859</b><i>件</i></span></p>
+                    <div class="animationBarInner"><div></div></div>
+                </div>
+                <div class="animationBar">
+                    <p><span class="monitortitle">累计申请标的金额</span><span class="numAPiece"><b class="numberFont">2<i class="topWan">万</i>3859</b><i>件</i></span></p>
+                    <div class="animationBarInner"><div></div></div>
+                </div>
+                <div class="animationBar">
+                    <p><span class="monitortitle">执行执行到位的金额</span><span class="numAPiece"><b class="numberFont">2<i class="topWan">万</i>3859</b><i>亿元</i></span></p>
+                    <div class="animationBarInner"><div></div></div>
+                </div>
+                <div class="animationBar">
+                    <p><span class="monitortitle">失信被执行人</span><span class="numAPiece"><b class="numberFont">2<i class="topWan">万</i>3859</b><i>人</i></span></p>
+                    <div class="animationBarInner"><div></div></div>
+                </div>
+            </div>
+        </div>
+        <!--地图-->
+        <div class="map">
+                <div class="todayCaseAcceptance">
+                    <p class="numberFont">3434</p>
+                    <span>今日收案</span>
+                </div>
+                <div class="todayCaseClosed">
+                    <p class="numberFont">4454</p>
+                    <span>今日结案</span>
+                </div>
+            <!--地图开始-->
+            <div class="main" id="map">
+                <div class="proj fl pro_map" style="position: relative;">
+                    <div id="cont_pro_map" style="z-index:1;"></div>
+                </div>
+            </div>
+            <!--地图结束-->
+
+        </div>
+        <div class="indexRight" style="">
+            <!--科技法庭-->
+            <div class="indexTechnologyCourt">
+                <div class="indexTitle"><p><a href="#">科技法庭</a></p></div>
+                <div class="hexagon">
+                    <img src="img/hexagon.png" alt="">
+                    <p>科技法庭数</p>
+                    <span class="numberFont">0808</span>
+                </div>
+                <div class="hexagon">
+                    <img src="img/hexagon.png" alt="">
+                    <p>当前排期数</p>
+                    <span class="numberFont">0808</span>
+                </div>
+                <div class="hexagon">
+                    <img src="img/hexagon.png" alt="">
+                    <p>正在开庭数</p>
+                    <span class="numberFont">0808</span>
+                </div>
+            </div>
+            <!--执法执勤车辆-->
+                <div class="indexLawEnforcementCar">
+                    <div class="indexTitle"><p style="width:130px;"><a href="#">执法执勤车辆</a></p></div>
+                    <div class="bottleLine bottleLine1"></div>
+                    <div class="bottleLine bottleLine2"></div>
+                    <div class="carsInfo">
+                        <img src="img/carsIcon.png" alt="">
+                        <p><span class="numberFont">91<i class="topWan">万</i>924</span><i>辆</i></p>
+                        <span><i>车辆总数</i></span>
+                    </div>
+                    <div class="carsInfo">
+                        <img src="img/carsIcon.png" alt="">
+                        <p><span class="numberFont">91<i class="topWan">万</i>954</span><i>次</i></p>
+                        <span><i>出行车次</i></span>
+                    </div>
+                    <div class="carsInfo">
+                        <img src="img/dashboardIcon.png" alt="">
+                        <p><span class="numberFont">91<i class="topWan">万</i>924</span><i>km</i></p>
+                        <span><i>出行里程</i></span>
+                    </div>
+                </div>
+            <!--安全监管-->
+            <div class="indexSafetySupervision">
+                <div class="indexTitle"><p><a href="anguan.html">安全监管</a></p></div>
+                <div class="SafetyInfo">
+                    <div class="SafetyInfoL">
+                        <img class="rotating" src="img/circleAround.png" alt="">
+                        <i class="iconfont">&#xe622;</i>
+                    </div>
+                    <div class="SafetyInfoR">
+                        <span>
+                           <span>设备总数</span> <i class="numberFont">3</i><b class="topWan">万</b><i>9524</i>台</span>
+                    </div>
+                </div>
+                <div class="SafetyInfo">
+                    <div class="SafetyInfoL">
+                        <img class="rotating" src="img/circleAround.png" alt="">
+                        <i class="iconfont">&#xe624;</i>
+                    </div>
+                    <div class="SafetyInfoR">
+
+                        <span><span>安全事件总数</span> <i class="numberFont">324</i>台</span>
+                    </div>
+                </div>
+                <div class="SafetyInfo">
+                    <div class="SafetyInfoL">
+                        <img class="rotating" src="img/circleAround.png" alt="">
+                        <i class="iconfont">&#xe623;</i>
+                    </div>
+                    <div class="SafetyInfoR">
+                        <span><span>当日安全事件数</span><i class="numberFont">3524</i>台</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footerLine footerLine1"></div>
+<div class="footerLine footerLine2"></div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/echarts.js "></script>
+<script src="js/fujian.js"></script>
+<script src="js/pie.js"></script>
+<script src="js/bigscreen.js"></script>
+</body>
+</html>
