@@ -2,7 +2,15 @@
 $('#map').ready(function(){
     getEcharts();
 });
-
+var fillSize;
+var windowWidthPie = window.innerWidth;
+if(windowWidthPie<1400){
+    fillSize = 10;
+}else if(windowWidthPie<1700){
+    fillSize = 40;
+}else{
+    fillSize = 50;
+}
 function getEcharts(){
     // Step:3 conifg ECharts's path, link to echarts.js from current page.
     // Step:3 为模块加载器配置echarts的路径，从当前页面链接到echarts.js，定义所需图表路径
@@ -101,7 +109,7 @@ function getEcharts(){
                         markPoint : {
                             symbol:'emptyCircle',
                             symbolSize : function (v){
-                                return 10 + v/10;
+                                return fillSize + v/10;
                             },
                             effect : {
                                 show: true,
