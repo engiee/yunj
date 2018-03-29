@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0">
+    <title>Title</title>
+    <style>
+        .circle{
+            margin:300px;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            border-radius: 100%;
+            position: relative;
+            background: -webkit-radial-gradient(rgba(255,204,28,0.23), rgba(255,204,28,1)); /* Safari 5.1 - 6.0 */
+            background: -o-radial-gradient(rgba(255,204,28,0.23), rgba(255,204,28,1)); /* Opera 11.6 - 12.0 */
+            background: -moz-radial-gradient(rgba(255,204,28,0.23), rgba(255,204,28,1)); /* Firefox 3.6 - 15 */
+            background: radial-gradient(rgba(255,204,28,0.23), rgba(255,204,28,1)); /* 标准的语法 */
+            animation:rotating linear 2s infinite;
+            -webkit-animation:rotating linear 2s infinite;
+
+        }
+        @keyframes rotating {
+            0% {
+                width:0;
+                height:0;
+                left: 0;
+                top:0;
+            }
+            100% {
+               width:100px;
+                height:100px;
+                left: -50px;
+                top:-50px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+   <div class="circle">
+
+   </div>
+</body>
+</html>
