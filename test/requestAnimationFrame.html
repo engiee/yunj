@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0">
+    <title>Title</title>
+</head>
+<body>
+<div id="demo" style="position:absolute; width:100px; height:100px; background:#ccc; left:0; top:0;"></div>
+
+<script>
+    var demo = document.getElementById('demo');
+    function render(){
+        demo.style.left = parseInt(demo.style.left) + 1 + 'px'; //每一帧向右移动1px
+    }
+    requestAnimationFrame(function(){
+        render();
+        //当超过300px后才停止
+        console.log(arguments);
+        requestAnimationFrame(arguments.callee);
+    });
+</script>
+</body>
+</html>
