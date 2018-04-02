@@ -27,7 +27,8 @@ var dataInfo =  [12,34,56,89,12,34,56,89,12,34];
 $(".caseLeft .animationBarAble").animationBar(dataInfo,true);
 $(".caseRight .animationBarAble").animationBar(dataInfo,true);
 
-var anguanData =  [12,34,56,89,12,34,56,89,12,34,12,67];
+//安管
+var anguanData =  [12,34,56,89,12,34,56,89,12,34,12,67,34];
 $(".anguan .botom .list .cont .contlist .left ul li .orleft span").animationBar(anguanData,true);
 $(".anguan .botom .list .cont .contlist .right ul li .oright span").animationBar(anguanData,true);
 
