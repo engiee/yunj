@@ -40,6 +40,9 @@ p,span,b,i{
 .numberFont{
   font-family: DIN Alternate;
 }
+.none{
+  display: none;
+}
 /*公共css*/
 .indexTitle{
   width:100%;
@@ -153,6 +156,68 @@ p,span,b,i{
   right:0;
   top:-2px;
 }
+/*公共弹框*/
+.tankuang {
+  width: 246px;
+  height: 132px;
+  background-color: #1e3f95;
+  padding: 11px 10px;
+  border-radius: 5px;
+  position: absolute;
+  left: 20px;
+  top: 26px;
+}
+.tankuang .tanKchance {
+  line-height: 1em;
+  font-size: 1em;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #4372e7;
+  overflow: hidden;
+}
+.tankuang .tanKchance>span{
+  float: left;
+}
+.tankuang .tanKchance .tanKchancecurrent {
+  color: #739cff;
+}
+.tankuang .tanKchance .tanKchancegaoyuan {
+  color: #eaecf3;
+}
+.tankuang .tanKchance .tanKchancebtn {
+  width: 50px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  background-color: #2852bb;
+  border: none;
+  border-radius: 2px;
+  margin-left: 20px;
+  color: #eaecf3;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 9px;
+}
+.tankuang .tanKcity {
+  color: #739cff;
+  margin-top:6px;
+}
+.tankuang .tanKcity span {
+  width: 49px;
+  height: 26px;
+  margin-right: 7px;
+  line-height: 30px;
+  font-weight: normal;
+  font-size: 0.8em;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+}
+.tankuang .tanKcity .tanKcityFirst {
+  background-color: #2852bb;
+  border-radius: 2px;
+  color:white;
+}
 /*二级页面*/
 .bigscreen {
   width: 100%;
@@ -165,7 +230,8 @@ p,span,b,i{
   overflow: hidden;
 }
 .bigscreen .top {
-  overflow: hidden;
+  height: 5vh;
+  overflow: visible;
 }
 .bigscreen .top .title {
   background-image: linear-gradient(90deg, #2bb3ff 0%, rgba(43, 179, 255, 0) 100%);
@@ -221,6 +287,7 @@ p,span,b,i{
 }
 .erjiXiala .erjiXialaR{
   padding-left: 2%;
+  position: relative;
 }
 .erjiXiala .erjiXialaM{
   text-align:center;

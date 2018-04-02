@@ -1,0 +1,227 @@
+#times{
+    overflow: hidden;
+    color: #000;
+}
+#changeTimes{
+    width:694px;
+    margin:0 auto;
+    position: relative;
+
+}
+#nowTimes,#historyTimes{
+    text-align: center;
+    width: 363px;
+    margin: 0 auto;
+    height: 30px;
+    line-height: 30px;
+}
+#nowTimes+i{
+    position: absolute;
+    top: 0;
+    right: 278px;
+    width: 23px;
+    text-align: center;
+    height: 32px;
+    line-height: 32px;
+    font-size: 18px;
+}
+.iconfont{
+    cursor: pointer;
+}
+.updown{
+    float: right;
+}
+#historyStartTime,#historyEndTime{
+    min-height: 30px;
+    display: inline-block;
+}
+#historyEndTime{
+    text-align: center;
+}
+#historyStartTime{
+    text-align: right;
+
+}
+#historyTimes{
+    color: #fff;
+}
+#startData,#range{
+    margin-top: 1px;
+}
+#checkedMaster #startData,input,#endData{
+    float: left;
+}
+#checkedMaster #startData,#endData{
+    background: #2853bc;
+    position: relative;
+}
+#checkedMaster #startData ins.iconfontBefore{
+
+}
+#checkedMaster #endData ins.iconfontAfter{
+    -webkit-transform:scale(1) rotate(180deg);
+    -moz-transform:scale(1) rotate(180deg);
+    -o-transform:scale(1) rotate(180deg);
+    margin-left: -19px;
+}
+#endData i.iconfont{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    float: left;
+}
+#checkedMaster #startData,#endData span{
+    display: block;
+    float: left;
+    height: 30px;
+    line-height:30px;
+    z-index: 30;
+    color: #fff;
+    text-align: center;
+}
+#range{
+    width: 360px;
+    float: left;
+    height: 30px;
+    background-color: #203583;
+    padding-left: 26px;
+    padding-right: 26px;
+}
+#yearText{
+    position: absolute;
+    margin-top: 34px;
+    background-color: #2853bc;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 2px;
+    padding: 4px;
+    text-decoration: none;
+}
+#yearText:after{
+    content: "";
+    width:0;
+    height:0;
+    font-size:0;
+    border:solid 5px;
+    border-color:transparent transparent #2853bc transparent;
+    position: absolute;
+    top: -10px;
+    left: 19px;
+}
+input[type=range] {
+    -webkit-appearance: none;
+    width: 315px;
+    height: 30px;
+    background: url(../img/sliderBg.png) no-repeat;
+    background-position-x: -39px;
+    position: absolute;
+    border: 0;
+    margin: 0;
+    float: none;
+    display: inherit;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 30px;
+    width: 10px;
+    background: url(../img/thumb.png) no-repeat;
+    cursor: pointer;
+}
+#resetTimes,#determine{
+    background: #2853bc;
+    outline: none;
+    height: 30px;
+    border: none;
+    margin-left:3px;
+    color: #fff;
+    padding:0 8px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#resetTimes i,#determine i{
+    font-size: 12px;
+    margin-right: 3px;
+}
+#determine{margin-right:0px;}
+#startData i,#endData i{
+    color: #5e8bf9;
+}
+#startData{
+    padding-left:5px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+#endData{
+    width:66px;
+    padding-right: 5px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    height: 30px;
+}
+.month{width:66px;border:1px solid gray;position: absolute;
+    background-color: #2853BC;
+    border-radius: 4px;
+    margin-left: 0;
+}
+.montnYear{text-align: center;height:30px;line-height: 30px;
+    color: #fff;
+}
+.monthNumber{width: 70px; margin:0 auto;display: table;}
+.monthNumber span{float:left; display: block;
+    width: 66px;
+    cursor: pointer;
+}
+.monthNumber span:hover{
+    background: #d2d2d2;
+    color: #000000 !important;
+}
+.monthNumber span.on,#endData span.on{
+    background: #ddd;
+    color:#000;
+}
+.monthNumber .monthNumberLeft,.monthNumber .monthNumberRight{color:#487af4;cursor: pointer;padding-top: 2px; }
+.monthNumber .monthNumberMiddle{margin:0;}
+.monthDay{
+    position: relative;
+    z-index: 9;
+}
+
+#endData .month .monthNumber .iconfont{color:#487af4;}
+.checkedTitle {
+    width:66px;
+    cursor:pointer;
+    display: inline-block;
+}
+.clear{clear: both;}
+#startData .month .monthDay .on,#endData .month .monthDay .on{
+    background-color: #fff;
+    color: #000;
+}
+.timeGray{
+    background-color: gray;
+}
+.rotateAnimation{
+    animation:rotateanimation 5s infinite;
+    -webkit-animation:rotateanimation 5s infinite;
+}
+@keyframes rotateanimation
+{
+-webkit-transform: scale(0.5);
+-moz-transform: scale(0.5);
+-ms-transform: scale(0.5);
+transform: scale(0.5)
+}
+
+@-webkit-keyframes rotateanimation /*Safari and Chrome*/
+{
+-webkit-transform: scale(0.5);
+-moz-transform: scale(0.5);
+-ms-transform: scale(0.5);
+transform: scale(0.5)
+}

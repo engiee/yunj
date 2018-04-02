@@ -31,13 +31,21 @@
 }
 .anguan .agMid .contaniner .midtxt {
   float: left;
-  margin: 2vh 0 0 1vw;
+  margin: 1.5vh 0 0 1vw;
 }
 .anguan .agMid .contaniner .midtxt p {
   line-height: 4vh;
+  font-size:1.2em;
+}
+.anguan .agMid .contaniner .midtxt p:first-child{
+  font-size:1.5em;
 }
 .anguan .agMid .contaniner .midtxt p:last-child {
   line-height: 8vh;
+}
+.anguan .agMid .contaniner .midtxt p sup {
+  position: relative;
+  bottom:0.5em;
 }
 .anguan .agMid .contaniner .midtxt p:last-child span {
   font-family: DIN Alternate;
@@ -252,7 +260,7 @@
   font-size: 1.5vw;
   margin: 0 3px;
 }
-.anguan .botom .scope .survey .suCon .sucotop .suptleft .numd span sup {
+sup {
   color: #00f1ff;
   font-size: 0.8vw;
 }

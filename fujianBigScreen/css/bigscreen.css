@@ -90,9 +90,12 @@
   float: left;
   width:49%;
   color:#000;
+  position: relative;
 }
 .bigscreen .title .indexTitleSelect>div>.indexSelectCourt{
   border-right:1px solid #000;
+  position: relative;
+  z-index:10;
 }
 .bigscreen .title .indexTitleSelect>div>div i{
   padding-left:5px;
@@ -119,6 +122,7 @@
 .bigscreen .title .moreTheme p i{
   cursor: pointer;
 }
+
 /*首页左边部分*/
 .bigscreen .container {
   width: 100%;

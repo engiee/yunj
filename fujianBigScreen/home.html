@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/bigscreen.css"/>
     <link rel="stylesheet" href="css/font/iconfont.css"/>
+    <link rel="stylesheet" href="css/rangeTime.css">
 </head>
 <body>
 <div class=""></div>
@@ -17,11 +18,35 @@
         <div class="lgTitle">福建法院大数据服务平台</div>
         <div class="indexTitleSelect">
             <div>
-            <div class="indexSelectCourt">
-                 <span>福建法院</span><i class="iconfont">&#xe6b9;</i>
+            <div class="indexSelectCourt tankuangBox">
+                <span>福建法院</span><i class="iconfont chooseCourt">&#xe6b9;</i>
+                <div class="tankuang none" style="z-index:10;">
+                    <div class="arrow-up"></div>
+                    <div class="tanKchance">
+                        <span class="tanKchancecurrent">当前选择：</span>
+                        <span class="tanKchancegaoyuan">福建法院</span>
+                        <button class="tanKchancebtn" onclick="">确定</button>
+                    </div>
+                    <div class="tanKcity">
+                        <span class="tanKcityFirst">浙江省</span>
+                        <span class="city">杭州市</span>
+                        <span class="city">嘉兴市</span>
+                        <span class="city">宁波市</span>
+                        <span class="city">台州市</span>
+                        <span class="city">金华市</span>
+                        <span class="city">湖州市</span>
+                        <span class="city">温州市</span>
+                        <span class="city">衢州市</span>
+                        <span class="city">丽水市</span>
+                        <span class="city">绍兴市</span>
+                        <span class="city">舟山市</span>
+                    </div>
+                </div>
             </div>
             <div class="indexSelectYears">
-                <span>2018年</span><i class="iconfont">&#xe6b9;</i>
+                <span id="changeTimes" style="position: absolute;top: -4px;left:-262px;z-index:9;"></span>
+                <!-- 时间插件 -->
+                <!--<div id="changeTimes" style="left: 628px;top: 77px;position: absolute;z-index: 10000;"></div>-->
             </div>
             </div>
         </div>
@@ -205,9 +230,13 @@
 <div class="footerLine footerLine2"></div>
 
 <script src="js/jquery.min.js"></script>
+<script src="js/rangTime.jquery.js"></script>
 <script src="js/echarts.js "></script>
 <script src="js/fujian.js"></script>
 <script src="js/pie.js"></script>
 <script src="js/bigscreen.js"></script>
+<script>
+
+</script>
 </body>
 </html>
