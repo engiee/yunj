@@ -382,6 +382,7 @@ sup {
 .ReferenceLineL b:first-child::before{
   content: '100%';
   font-family: DIN Alternate;
+  letter-spacing: 0;
   position: absolute;
   top:-2.4em;
   left:-1em;
@@ -389,6 +390,7 @@ sup {
 .ReferenceLineL b:nth-child(2)::before{
   content: '75%';
   font-family: DIN Alternate;
+  letter-spacing: 0;
   position: absolute;
   top:-2.4em;
   left:-0.8em;
@@ -396,6 +398,7 @@ sup {
 .ReferenceLineL b:nth-child(3)::before{
   content: '50%';
   font-family: DIN Alternate;
+  letter-spacing: 0;
   position: absolute;
   top:-2.4em;
   left:-0.8em;
@@ -403,6 +406,7 @@ sup {
 .ReferenceLineL b:nth-child(4)::before{
   content: '25%';
   font-family: DIN Alternate;
+  letter-spacing: 0;
   position: absolute;
   top:-2.4em;
   left:-0.8em;
@@ -410,6 +414,7 @@ sup {
 .ReferenceLineL b:nth-child(5)::before{
   content: '0';
   font-family: DIN Alternate;
+  letter-spacing: 0;
   position: absolute;
   top:-2.4em;
   left:-0.2em;
@@ -424,6 +429,7 @@ sup {
 .ReferenceLineR b:nth-child(2)::before{
   content: '25%';
   font-family: DIN Alternate;
+  letter-spacing: 0;
   position: absolute;
   top:-2.4em;
   left:-0.8em;
@@ -431,6 +437,7 @@ sup {
 .ReferenceLineR b:nth-child(3)::before{
   content: '50%';
   font-family: DIN Alternate;
+  letter-spacing: 0;
   position: absolute;
   top:-2.4em;
   left:-0.8em;
@@ -439,6 +446,7 @@ sup {
   content: '75%';
   font-family: DIN Alternate;
   position: absolute;
+  letter-spacing: 0;
   top:-2.4em;
   left:-0.8em;
 }
@@ -446,6 +454,7 @@ sup {
   content: '100%';
   font-family: DIN Alternate;
   position: absolute;
+  letter-spacing: 0;
   top:-2.4em;
   left:-1em;
 }.anguan .botom .list .cont p.referenceP {

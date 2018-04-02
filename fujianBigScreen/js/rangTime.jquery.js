@@ -39,7 +39,6 @@ var changeTime = {
         }else{
             $(obj).html('&#xe9a7;');
         }
-        //$(this).addClass('rotateAnimation');
     },
     bindCheckedMaster:function(){
         var day = new Date();

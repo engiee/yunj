@@ -206,22 +206,3 @@ input[type=range]::-webkit-slider-thumb {
 .timeGray{
     background-color: gray;
 }
-.rotateAnimation{
-    animation:rotateanimation 5s infinite;
-    -webkit-animation:rotateanimation 5s infinite;
-}
-@keyframes rotateanimation
-{
--webkit-transform: scale(0.5);
--moz-transform: scale(0.5);
--ms-transform: scale(0.5);
-transform: scale(0.5)
-}
-
-@-webkit-keyframes rotateanimation /*Safari and Chrome*/
-{
--webkit-transform: scale(0.5);
--moz-transform: scale(0.5);
--ms-transform: scale(0.5);
-transform: scale(0.5)
-}
