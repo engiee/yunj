@@ -257,6 +257,7 @@
 }
 @media (max-width:40000px) and ( min-width: 1800px) {
   .zxck .midle .midNums .miText{
-  line-height:4vh;
+    line-height:4vh;
+    font-size:1.2em;
   }
 }

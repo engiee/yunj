@@ -36,7 +36,7 @@
   color:#00f1ff;
   font-size:0.4em;
   position: relative;
-  bottom:0.6em;
+  bottom:1em;
 }
 /*首页标题标题部分*/
 .bigscreen .title {
@@ -602,5 +602,18 @@
   }
   .bigscreen .container .indexRight .indexSafetySupervision .SafetyInfo .SafetyInfoR span{
     bottom: -1.2vh;
+  }
+  .bigscreen .container .indexLeft .indexExecutionMonitoring .animationBar{
+    height:5vh;
+  }
+  .bigscreen .container .indexLeft .indexExecutionMonitoring .animationBar p{
+    font-size:1.2em;
+  }
+  .bigscreen .container .indexRight .indexSafetySupervision .SafetyInfo .SafetyInfoR{
+    font-size:1.2em;
+  }
+  .bigscreen .container .indexRight .indexTechnologyCourt .hexagon p{
+    font-size:1.2em;
+    top:22%;
   }
 }
