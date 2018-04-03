@@ -250,7 +250,9 @@
 
 }
 @media (min-width:1500px) and ( max-width: 1699px){
-
+  .zxck .midle .midNums .miText{
+    line-height: 4vh;
+  }
 }
 @media (min-width:1699px) and ( max-width: 1799px){
 
