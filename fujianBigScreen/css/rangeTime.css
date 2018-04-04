@@ -53,9 +53,12 @@
 #checkedMaster #startData,input,#endData{
     float: left;
 }
-#checkedMaster #startData,#endData{
-    background: #2853bc;
-    position: relative;
+#startData ins,
+#endData ins{
+    background-image: url(../img/rangeTimeFillet.png);
+    width: 19px;
+    position: absolute;
+    height: 30px;
 }
 #checkedMaster #startData ins.iconfontBefore{
 
@@ -64,7 +67,11 @@
     -webkit-transform:scale(1) rotate(180deg);
     -moz-transform:scale(1) rotate(180deg);
     -o-transform:scale(1) rotate(180deg);
-    margin-left: -19px;
+    margin-left: -51px;
+}
+#checkedMaster #startData,#endData{
+    background: #00a5d1;
+    position: relative;
 }
 #endData i.iconfont{
     display: inline-block;
@@ -82,7 +89,7 @@
     text-align: center;
 }
 #range{
-    width: 360px;
+    width: 322px;
     float: left;
     height: 30px;
     background-color: #203583;
@@ -92,12 +99,14 @@
 #yearText{
     position: absolute;
     margin-top: 34px;
-    background-color: #2853bc;
-    font-size: 12px;
-    color: #fff;
     border-radius: 2px;
     padding: 4px;
     text-decoration: none;
+    font-family:MicrosoftYaHei;
+    font-size:12px;
+    color:#00a5d1;
+    text-align:left;
+    background:#203583;
 }
 #yearText:after{
     content: "";
@@ -136,7 +145,7 @@ input[type=range]::-webkit-slider-thumb {
     cursor: pointer;
 }
 #resetTimes,#determine{
-    background: #2853bc;
+    background: #00a5d1;;
     outline: none;
     height: 30px;
     border: none;
@@ -152,7 +161,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 #determine{margin-right:0px;}
 #startData i,#endData i{
-    color: #5e8bf9;
+    color: #09308b;
 }
 #startData{
     padding-left:5px;

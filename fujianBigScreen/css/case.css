@@ -166,6 +166,9 @@
     right: 28%;
     z-index:2;
 }
+#checkedMaster #endData ins.iconfontAfter{
+    margin-left:-19px !important;
+}
 /*适配屏幕*/
 @media (min-width: 1000px) {
     body,html{

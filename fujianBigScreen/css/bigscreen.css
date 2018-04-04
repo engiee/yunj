@@ -299,6 +299,10 @@
   -o-animation: scroll 1.8s linear infinite;
   animation: scroll 1.8s linear infinite;
 }
+#resetTimes, #determine{
+    position: relative;
+    right:20px;
+}
 @keyframes scroll {
   0% {
     width:0;
