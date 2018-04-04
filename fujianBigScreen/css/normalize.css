@@ -118,7 +118,7 @@ p,span,b,i{
 }
 .todayCaseAcceptance p,.todayCaseClosed p{
   color:#ff713b;
-  font-size:1.8em;
+  font-size:2em;
   position: relative;
   top:5px;
   text-align: center;
@@ -173,7 +173,7 @@ p,span,b,i{
 .tankuang {
   width: 246px;
   height: 132px;
-  background-color: #1e3f95;
+  background:#08308f;
   padding: 11px 10px;
   border-radius: 5px;
   position: absolute;
@@ -184,32 +184,32 @@ p,span,b,i{
   line-height: 1em;
   font-size: 1em;
   padding-bottom: 10px;
-  border-bottom: 1px solid #4372e7;
+  border-bottom:1px solid #2bb3ff;
   overflow: hidden;
 }
 .tankuang .tanKchance>span{
   float: left;
 }
 .tankuang .tanKchance .tanKchancecurrent {
-  color: #739cff;
+  color:#00f1fd;
 }
 .tankuang .tanKchance .tanKchancegaoyuan {
-  color: #eaecf3;
+  color: #ffffff;
 }
 .tankuang .tanKchance .tanKchancebtn {
   width: 50px;
-  height: 20px;
-  line-height: 20px;
+  height: 25px;
+  line-height: 22px;
   text-align: center;
-  background-color: #2852bb;
-  border: none;
-  border-radius: 2px;
   margin-left: 20px;
   color: #eaecf3;
   cursor: pointer;
   position: absolute;
   right: 20px;
-  top: 9px;
+  top: 7px;
+  background:#0845b9;
+  border:1px solid #2cb3ff;
+  border-radius:4px;
 }
 .tankuang .tanKcity {
   color: #739cff;
@@ -218,18 +218,21 @@ p,span,b,i{
 .tankuang .tanKcity span {
   width: 49px;
   height: 26px;
-  margin-right: 7px;
+  margin-right: 10.5px;
   line-height: 30px;
   font-weight: normal;
   font-size: 0.8em;
   float: left;
+  color:#00f1fd;
   text-align: center;
+  border:1px solid transparent;
   cursor: pointer;
 }
 .tankuang .tanKcity .tanKcityFirst {
-  background-color: #2852bb;
-  border-radius: 2px;
   color:white;
+  background:#0845b9;
+  border:1px solid #2cb3ff;
+  border-radius:4px;
 }
 /*二级页面*/
 .bigscreen {
@@ -310,6 +313,10 @@ p,span,b,i{
   cursor: pointer;
   margin-left: 5px;
 }
+.tankuangBox{
+  font-weight: bold;
+  font-size:1.1em;
+}
 @keyframes rotating{
   from{transform:rotate(0)}
   to{transform:rotate(-360deg)}
@@ -373,10 +380,10 @@ p,span,b,i{
     font-size:95%;
   }
   .todayCaseAcceptance p, .todayCaseClosed p{
-    top:0.3em;
+    top:0.2em;
   }
   .todayCaseAcceptance>span, .todayCaseClosed>span{
-    top:0em;
+    top:0.2em;
     z-index: 1;
   }
 }

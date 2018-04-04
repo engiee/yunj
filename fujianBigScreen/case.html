@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/case.css"/>
     <link rel="stylesheet" href="css/font/iconfont.css"/>
     <link rel="stylesheet" href="css/rangeTime.css">
-    <link rel="stylesheet" href="css/fanpai.css">
     <style>
         #times{
             color:#00f1ff;
@@ -30,7 +29,7 @@
                     <div class="erjiXiala">
                         <div class="erjiXialaL tankuangBox">
                             <span>福建法院</span><i class="iconfont chooseCourt" style="z-index:100;position: relative;">&#xe6b9;</i>
-                            <div class="tankuang none" style="z-index:12;top: 40px;left: 40px;">
+                            <div class="tankuang none" style="z-index:12;top: 40px;left: 40px;background: #1541A4;">
                                 <div class="arrow-up"></div>
                                 <div class="tanKchance">
                                     <span class="tanKchancecurrent">当前选择：</span>
@@ -291,7 +290,7 @@
     <div class="footerLine footerLine2"></div>
 
     <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.fliptimer.js"></script>
+    <script src="js/countUp.min.js"></script>
     <script src="js/rangTime.jquery.js"></script>
     <script src="js/bigscreen.js"></script>
     <script src="js/echarts.js"></script>
@@ -303,42 +302,25 @@
             $(this).addClass("on").siblings().removeClass("on");
         })
         /*案件的今日收案翻牌*/
-        var valid3 = 1;
-        var data03 = 5643;
-        if (valid3 == 1) {
-            f1 = $('#caseAcceptence').flipTimer({
-                digitSetFontSize: 50,
-                digitSetFontWeight: 700,
-                digitSetWidth: 40,
-                digitSetMargin: "0 6px",
-                /*shadowTopPadding: "0 9px",*/
-                digitWrapLineHeight: 30,
-                digitWrapMarginTop: "-90%",
-                numLength: 4,
-                num: data03
-            });
-            valid++;
+        var options = {
+            useEasing: true,
+            useGrouping: true,
+            separator: ',',
+            decimal: '.',
+        };
+        var countUp1 = new CountUp('caseAcceptence',0, 9462, 0, 8.5, options);
+        if (!countUp1.error) {
+            countUp1.start();
         } else {
-            f1.increaseDigit(data03);
+            console.error(countUp1.error);
         }
+
         /*案件的今日结案翻牌*/
-        var valid4 = 1;
-        var data04 = 3333;
-        if (valid4 == 1) {
-            f1 = $('#caseClosed').flipTimer({
-                digitSetFontSize: 50,
-                digitSetFontWeight: 700,
-                digitSetWidth: 40,
-                digitSetMargin: "0 6px",
-                /*shadowTopPadding: "0 9px",*/
-                digitWrapLineHeight: 30,
-                digitWrapMarginTop: "-90%",
-                numLength: 4,
-                num: data04
-            });
-            valid++;
+        var countUp2 = new CountUp('caseClosed',0, 9462, 0, 8.5, options);
+        if (!countUp2.error) {
+            countUp2.start();
         } else {
-            f1.increaseDigit(data04);
+            console.error(countUp2.error);
         }
     </script>
 </body>

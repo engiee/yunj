@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/bigscreen.css"/>
     <link rel="stylesheet" href="css/font/iconfont.css"/>
     <link rel="stylesheet" href="css/rangeTime.css">
-    <link rel="stylesheet" href="css/fanpai.css">
+    <script src="js/countUp.min.js"></script>
 </head>
 <body>
 <div class=""></div>
@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div class="indexSelectYears">
-                <span id="changeTimes" style="position: absolute;top: -4px;left:-262px;z-index:9;"></span>
+                <span id="changeTimes" style=""></span>
                 <!-- 时间插件 -->
                 <!--<div id="changeTimes" style="left: 628px;top: 77px;position: absolute;z-index: 10000;"></div>-->
             </div>
@@ -251,7 +251,6 @@
 <div class="footerLine footerLine2"></div>
 
 <script src="js/jquery.min.js"></script>
-<script src="js/jquery.fliptimer.js"></script>
 <script src="js/rangTime.jquery.js"></script>
 <script src="js/echarts.js "></script>
 <script src="js/fujian.js"></script>
@@ -259,42 +258,25 @@
 <script src="js/bigscreen.js"></script>
 <script>
     /*首页的今日收案翻牌*/
-    var valid = 1;
-    var data01 = 5643;
-    if (valid == 1) {
-        f1 = $('#todayAcceptence').flipTimer({
-            digitSetFontSize: 50,
-            digitSetFontWeight: 700,
-            digitSetWidth: 40,
-            digitSetMargin: "0 6px",
-            /*shadowTopPadding: "0 9px",*/
-            digitWrapLineHeight: 30,
-            digitWrapMarginTop: "-90%",
-            numLength: 4,
-            num: data01
-        });
-        valid++;
+    var options = {
+        useEasing: true,
+        useGrouping: true,
+        separator: ',',
+        decimal: '.',
+    };
+    var countUp1 = new CountUp('todayAcceptence',0, 9462, 0, 8.5, options);
+    if (!countUp1.error) {
+        countUp1.start();
     } else {
-        f1.increaseDigit(data01);
+        console.error(countUp1.error);
     }
+
     /*首页的今日结案翻牌*/
-    var valid2 = 1;
-    var data02 = 3333;
-    if (valid2 == 1) {
-        f1 = $('#todayClosed').flipTimer({
-            digitSetFontSize: 50,
-            digitSetFontWeight: 700,
-            digitSetWidth: 40,
-            digitSetMargin: "0 6px",
-            /*shadowTopPadding: "0 9px",*/
-            digitWrapLineHeight: 30,
-            digitWrapMarginTop: "-90%",
-            numLength: 4,
-            num: data02
-        });
-        valid++;
+    var countUp2 = new CountUp('todayClosed',0, 9462, 0, 8.5, options);
+    if (!countUp2.error) {
+        countUp2.start();
     } else {
-        f1.increaseDigit(data02);
+        console.error(countUp2.error);
     }
 
 </script>

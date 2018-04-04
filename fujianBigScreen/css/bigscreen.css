@@ -230,7 +230,7 @@
   width:22%;
 }
 .bigscreen .container .indexLeft .indexForeignRelatedCases .indexColumn>div .indexColumnBlue{
-  background: url("../img/columnRed.png");
+  background: url("../img/columnBlue.png");
   height:0;
   width:22%;
 }
@@ -547,7 +547,9 @@
   left:-1.5px;
   bottom:0;
 }
-
+#changeTimes{
+  position: absolute !important;top: -4px;left:-262px;z-index:9;
+}
 .bigscreen .container .indexLeft .indexExecutionMonitoring .animationBar .animationBarInner>div{
 
 }
@@ -647,7 +649,23 @@
     top: 68.5vh;
     left:32vw;
   }
+  .specialLine span{
+    font-size:1em;
+  }
+  .specialLine p{
+    font-size:1.1em;
+  }
+  .topWan{
+    bottom: 0.6em;
+  }
+  .indexCase .topWan,.indexLawEnforcementCar .topWan{
+    bottom: 0.7em;
+  }
+  #changeTimes{
+    top: 0;
+  }
 }
+
 @media (min-width: 1650px) and (max-width:1799px){
   .bigscreen .title{
     top:-2vh;
@@ -699,5 +717,8 @@
   .bigscreen .container .indexRight .indexTechnologyCourt .hexagon p{
     font-size:1.2em;
     top:22%;
+  }
+  .indexCase .topWan,.indexLawEnforcementCar .topWan{
+    bottom: 0.8em;
   }
 }

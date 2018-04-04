@@ -1,6 +1,8 @@
 #times{
     overflow: hidden;
     color: #000;
+    font-weight: bold;
+    font-size:1.1em;
 }
 #changeTimes{
     width:694px;
@@ -164,8 +166,10 @@ input[type=range]::-webkit-slider-thumb {
     border-bottom-right-radius: 3px;
     height: 30px;
 }
-.month{width:66px;border:1px solid gray;position: absolute;
-    background-color: #2853BC;
+.month{
+    width:66px;
+    position: absolute;
+    background-color: #08308f;
     border-radius: 4px;
     margin-left: 0;
 }
@@ -173,8 +177,11 @@ input[type=range]::-webkit-slider-thumb {
     color: #fff;
 }
 .monthNumber{width: 70px; margin:0 auto;display: table;}
-.monthNumber span{float:left; display: block;
+.monthNumber span{
+    float:left;
+    display: block;
     width: 66px;
+    color:#00f1fd;
     cursor: pointer;
 }
 .monthNumber span:hover{

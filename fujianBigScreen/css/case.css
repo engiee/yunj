@@ -223,16 +223,16 @@
         margin-bottom:5px;
     }
     .todayCaseAcceptance p, .todayCaseClosed p{
-        top:0.3em;
+        top:0.2em;
     }
     .todayCaseAcceptance span, .todayCaseClosed span{
-        top:0em;
+        top: 0.2em;
     }
     .caseContainer .caseAcceptNum img{
         margin-top:0.5vh;
     }
     .caseContainer .caseAcceptNum>p{
-        bottom:1.5vh;
+        bottom:2.2vh;
     }
 }
 @media (min-width: 1550px) {
