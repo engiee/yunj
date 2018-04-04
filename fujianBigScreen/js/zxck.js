@@ -16,6 +16,13 @@ zmroption = {
         formatter: "{a0}:{c0}<br/>{a1}:{c1}",
         backgroundColor:'rgba(26,41,104,0.8)'
     },
+    legend: {
+        right: 20,
+        data:['执行到位金额','申请标的金额'],
+        textStyle: {
+            color: '#fff'
+        },
+    },
     grid: {
         left: '1%',
         right: '1%',
@@ -141,6 +148,7 @@ zmroption = {
         }
     ]
 };
+//执行案件收结案
 caseoption = {
     color: ['#00e5ff','#ff5252'],
     tooltip: {
@@ -238,7 +246,7 @@ caseoption = {
         }
     ]
 };
-
+//执行申请标的金额地区
 sumoption = {
     tooltip : {
         trigger: 'axis',

@@ -277,6 +277,36 @@
   background-image:-moz-linear-gradient(left,rgba(254,137,63,0.00) 0%, #ff4d3f 100%);
   border-radius:100px;
 }
+
+/*首页执行查控的滚动条滚动速度*/
+.bigscreen .container .indexLeft .indexExecutionMonitoring .animationBar1 .animationBarInner>div{
+  -webkit-animation: scroll 2s linear infinite;
+  -o-animation: scroll 2s linear infinite;
+  animation: scroll 2s linear infinite;
+}
+.bigscreen .container .indexLeft .indexExecutionMonitoring .animationBar2 .animationBarInner>div{
+  -webkit-animation: scroll 1.5s linear infinite;
+  -o-animation: scroll 1.5s linear infinite;
+  animation: scroll 1.5s linear infinite;
+}
+.bigscreen .container .indexLeft .indexExecutionMonitoring .animationBar3 .animationBarInner>div{
+  -webkit-animation: scroll 1.2s linear infinite;
+  -o-animation: scroll 1.2s linear infinite;
+  animation: scroll 1.2s linear infinite;
+}
+.bigscreen .container .indexLeft .indexExecutionMonitoring .animationBar4 .animationBarInner>div{
+  -webkit-animation: scroll 1.8s linear infinite;
+  -o-animation: scroll 1.8s linear infinite;
+  animation: scroll 1.8s linear infinite;
+}
+@keyframes scroll {
+  0% {
+    width:0;
+  }
+  100% {
+    width:100%;
+  }
+}
 .bigscreen .container .indexRight .indexTechnologyCourt{
   height:20vh;
   margin-bottom:2vh;
@@ -413,11 +443,12 @@
   width:21vw;
   height:22vh;
   position: relative;
+  margin-top: 3vh;
 }
 .indexCase .caseTypePic{
   position: absolute;
   left:38%;
-  top:17vh;
+  top:18.7vh;
 }
 
 .bigscreen .container .indexRight .indexSafetySupervision{}
@@ -441,7 +472,38 @@
 .bigscreen .container #map{
   position: relative;
 }
-
+.specialLine{
+  position: absolute;
+  z-index: 1;
+  width:140px;
+}
+.specialLine span{
+  letter-spacing: 0 !important;
+  font-size:1.1em;
+}
+.specialLine img{
+  position: absolute;
+  height: 3em;
+  right:144px;
+}
+.specialLine.provenceLine{
+  top: 33vh;
+  left:40vw;
+}
+.specialLine.fuzhouLine{
+  top: 42vh;
+  left:40vw;
+}
+.specialLine.xiamenLine{
+  top: 64.5vh;
+  left:32vw;
+}
+.specialLine p.courtName{
+  color:#fff;
+}
+.specialLine p .acceptNum{
+  color:#FE9850;
+}
 /*首页右边部分*/
 .bigscreen .container .indexRight {
   width:25%;
@@ -484,6 +546,10 @@
 .bottleLine.bottleLine2::after{
   left:-1.5px;
   bottom:0;
+}
+
+.bigscreen .container .indexLeft .indexExecutionMonitoring .animationBar .animationBarInner>div{
+
 }
 /*适配屏幕*/
 @media (min-width: 1000px)  and (max-width:1199px){
@@ -546,11 +612,14 @@
     top:-30px;
   }
   .indexCase .caseTypePic{
-    top: 18.3vh;
+    top: 19.3vh;
     left:38.6%;
   }
   .indexCase .caseTypePic img{
     width:75px;
+  }
+  .bigscreen .container .indexLeft .indexExecutionMonitoring .animationBar {
+    height: 5vh;
   }
   .bigscreen .container .indexRight .indexSafetySupervision .SafetyInfo .SafetyInfoL i{
     top:12%;
@@ -560,8 +629,23 @@
   .bottleLine{
     top:3vh;
   }
+  #casePie{
+    margin-top:2vh;
+  }
   .bigscreen .container .indexRight .indexSafetySupervision .SafetyInfo .SafetyInfoR>span{
     bottom:0;
+  }
+  .specialLine.provenceLine{
+    top: 36vh;
+    left:40vw;
+  }
+  .specialLine.fuzhouLine{
+    top: 45vh;
+    left:40vw;
+  }
+  .specialLine.xiamenLine{
+    top: 68.5vh;
+    left:32vw;
   }
 }
 @media (min-width: 1650px) and (max-width:1799px){

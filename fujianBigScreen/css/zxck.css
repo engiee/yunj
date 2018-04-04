@@ -59,7 +59,7 @@
 }
 .zxck .zxMain .zxMainLeft {
   float: left;
-  border: 1px solid #2bb3ff;
+  border: 1px solid rgba(43,179,255,0.48);
   width: calc(64vw - 10px);
   width: -webkit-calc(64vw - 10px);
   width: -moz-calc(64vw - 10px);
@@ -85,7 +85,8 @@
 }
 .zxck .zxMain .zxMainLeft .zxcontainer .line {
   width: 64vw;
-  height: 44vh;
+  height: 42vh;
+  margin-top: 2vh;
 }
 .zxck .zxMain .zxMainRight {
   float: right;
@@ -93,7 +94,7 @@
   width: -webkit-calc(34vw - 10px);
   width: -moz-calc(34vw - 10px);
   height: 45vh;
-  border: 1px solid #2bb3ff;
+  border: 1px solid rgba(43,179,255,0.48);
   position: relative;
 }
 .zxck .zxMain .zxMainRight .zxtitle {
@@ -104,7 +105,7 @@
   left: 50%;
   top: -2vh;
   color: #00f1ff;
-  border: 1px solid #2bb3ff;
+  border: 1px solid rgba(43,179,255,0.48);
   background: #0a266e;
   text-align: center;
   margin-left: -5vw;
@@ -189,7 +190,7 @@
   width: calc(49vw - 10px);
   width: -webkit-calc(49vw - 10px);
   width: -moz-calc(49vw - 10px);
-  border: 1px solid #2bb3ff;
+  border: 1px solid rgba(43,179,255,0.48);
   height: 24vh;
   position: relative;
 }
@@ -201,7 +202,7 @@
   left: 50%;
   top: -2vh;
   color: #00f1ff;
-  border: 1px solid #2bb3ff;
+  border: 1px solid rgba(43,179,255,0.48);
   background: #0a2f8c;
   text-align: center;
   margin-left: -5vw;
@@ -218,7 +219,7 @@
   width: -webkit-calc(49vw - 10px);
   width: -moz-calc(49vw - 10px);
   height: 24vh;
-  border: 1px solid #2bb3ff;
+  border: 1px solid rgba(43,179,255,0.48);
   position: relative;
 }
 .zxck .botCon .botRight .zxtitle {
@@ -230,7 +231,7 @@
   left: 50%;
   top: -2vh;
   color: #00f1ff;
-  border: 1px solid #2bb3ff;
+  border: 1px solid rgba(43,179,255,0.48);
   background: #0a2f8c;
   text-align: center;
   margin-left: -7vw;

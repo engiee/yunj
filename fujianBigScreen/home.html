@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bigscreen.css"/>
     <link rel="stylesheet" href="css/font/iconfont.css"/>
     <link rel="stylesheet" href="css/rangeTime.css">
+    <link rel="stylesheet" href="css/fanpai.css">
 </head>
 <body>
 <div class=""></div>
@@ -59,7 +60,7 @@
         <div class="indexLeft" style="">
             <!--案件-->
             <div class="indexCase">
-                <div class="indexTitle"><p><a href="case.html">案&nbsp;&nbsp;&nbsp;&nbsp;件</a></p></div>
+                <div class="indexTitle"><p><a onclick="window.location.href='case.html'">案&nbsp;&nbsp;&nbsp;&nbsp;件</a></p></div>
                 <div class="caseNum">
                     <div>
                         <img src="img/rectangle.png" alt="">
@@ -111,19 +112,19 @@
                     <!--<div class="verticalLine"></div>-->
                 <!--</div>-->
 
-                <div class="animationBar">
+                <div class="animationBar animationBar1">
                     <p><span class="monitortitle">案件累计</span><span class="numAPiece"><b class="numberFont">2<i class="topWan">万</i>3859</b><i>件</i></span></p>
                     <div class="animationBarInner"><div></div></div>
                 </div>
-                <div class="animationBar">
+                <div class="animationBar animationBar2">
                     <p><span class="monitortitle">累计申请标的金额</span><span class="numAPiece"><b class="numberFont">2<i class="topWan">万</i>3859</b><i>件</i></span></p>
                     <div class="animationBarInner"><div></div></div>
                 </div>
-                <div class="animationBar">
+                <div class="animationBar animationBar3">
                     <p><span class="monitortitle">执行执行到位的金额</span><span class="numAPiece"><b class="numberFont">2<i class="topWan">万</i>3859</b><i>亿元</i></span></p>
                     <div class="animationBarInner"><div></div></div>
                 </div>
-                <div class="animationBar">
+                <div class="animationBar animationBar4">
                     <p><span class="monitortitle">失信被执行人</span><span class="numAPiece"><b class="numberFont">2<i class="topWan">万</i>3859</b><i>人</i></span></p>
                     <div class="animationBarInner"><div></div></div>
                 </div>
@@ -132,17 +133,37 @@
         <!--地图-->
         <div class="map">
                 <div class="todayCaseAcceptance">
-                    <p class="numberFont">3434</p>
+                    <p class="numberFont" id="todayAcceptence"></p>
                     <span>今日收案</span>
                 </div>
                 <div class="todayCaseClosed">
-                    <p class="numberFont">4454</p>
+                    <p class="numberFont" id="todayClosed"></p>
                     <span>今日结案</span>
                 </div>
             <!--地图开始-->
             <div class="main" id="map">
                 <div class="proj fl pro_map" style="position: relative;">
-                    <div id="cont_pro_map" style="z-index:1;"></div>
+                    <!--
+                      福州铁路法院
+                      厦门海事法院
+                      省高级法院
+                    -->
+                    <div class="specialLine provenceLine">
+                        <img src="img/provenceLine.png">
+                        <p class="courtName">省高级法院</p>
+                        <p><span class="acceptNum numberFont">121</span><span class="closedNum numberFont">/ 121</span></p>
+                    </div>
+                    <div class="specialLine fuzhouLine">
+                        <img src="img/fuzhouLine.png">
+                        <p class="courtName">福州铁路法院</p>
+                        <p><span class="acceptNum numberFont">121</span><span class="closedNum numberFont">/ 121</span></p>
+                    </div>
+                    <div class="specialLine xiamenLine">
+                        <img src="img/xiamenLine.png">
+                        <p class="courtName">厦门海事法院</p>
+                        <p><span class="acceptNum numberFont">121</span><span class="closedNum numberFont">/ 121</span></p>
+                    </div>
+                    <div id="cont_pro_map" style="z-index:0;"></div>
                 </div>
             </div>
             <!--地图结束-->
@@ -199,7 +220,7 @@
                     </div>
                     <div class="SafetyInfoR">
                         <span>
-                           <span>设备总数</span> <i class="numberFont">3</i><b class="topWan">万</b><i>9524</i>台</span>
+                           <span>设备总数</span> <i class="numberFont">3</i><b class="topWan">万</b><i class="numberFont">9524</i>台</span>
                     </div>
                 </div>
                 <div class="SafetyInfo">
@@ -230,12 +251,51 @@
 <div class="footerLine footerLine2"></div>
 
 <script src="js/jquery.min.js"></script>
+<script src="js/jquery.fliptimer.js"></script>
 <script src="js/rangTime.jquery.js"></script>
 <script src="js/echarts.js "></script>
 <script src="js/fujian.js"></script>
 <script src="js/pie.js"></script>
 <script src="js/bigscreen.js"></script>
 <script>
+    /*首页的今日收案翻牌*/
+    var valid = 1;
+    var data01 = 5643;
+    if (valid == 1) {
+        f1 = $('#todayAcceptence').flipTimer({
+            digitSetFontSize: 50,
+            digitSetFontWeight: 700,
+            digitSetWidth: 40,
+            digitSetMargin: "0 6px",
+            /*shadowTopPadding: "0 9px",*/
+            digitWrapLineHeight: 30,
+            digitWrapMarginTop: "-90%",
+            numLength: 4,
+            num: data01
+        });
+        valid++;
+    } else {
+        f1.increaseDigit(data01);
+    }
+    /*首页的今日结案翻牌*/
+    var valid2 = 1;
+    var data02 = 3333;
+    if (valid2 == 1) {
+        f1 = $('#todayClosed').flipTimer({
+            digitSetFontSize: 50,
+            digitSetFontWeight: 700,
+            digitSetWidth: 40,
+            digitSetMargin: "0 6px",
+            /*shadowTopPadding: "0 9px",*/
+            digitWrapLineHeight: 30,
+            digitWrapMarginTop: "-90%",
+            numLength: 4,
+            num: data02
+        });
+        valid++;
+    } else {
+        f1.increaseDigit(data02);
+    }
 
 </script>
 </body>

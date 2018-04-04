@@ -480,6 +480,9 @@ sup {
   .anguan .agMid .contaniner .pic i {
     font-size: 3.4vw;
   }
+  .anguan .agMid .contaniner .midtxt p:first-child {
+    font-size: 1.2em;
+  }
 }
 @media (min-width:1700px) and ( max-width: 1799px){
 

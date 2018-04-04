@@ -122,12 +122,12 @@ casePieOption  = {
                 }
             },
             data:[
-                {value:4, name:'刑事'},
-                {value:2, name:'行政'},
-                {value:3, name:'其他'},
-                {value:4, name:'赔偿'},
-                {value:2, name:'民事'},
-                {value:3, name:'执行'}
+                {value:43333, name:'刑事'},
+                {value:23333, name:'行政'},
+                {value:33333, name:'其他'},
+                {value:43333, name:'赔偿'},
+                {value:23333, name:'民事'},
+                {value:33333, name:'执行'}
             ]
         }
     ],

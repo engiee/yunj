@@ -23,6 +23,17 @@ a{
   cursor: pointer;
 
 }
+::selection {
+  background:transparent;
+}
+
+::-moz-selection {
+  background:transparent;
+}
+
+::-webkit-selection {
+  background:transparent;
+}
 a:hover{
   color:#00F1FF;
 }
@@ -60,6 +71,7 @@ p,span,b,i{
   width:100px;
   font-size:1.2em;
   background:#0a266e;
+  font-weight: bold;
 }
 .indexPage .indexTitle p:hover{
   background:#00F1FF;
@@ -109,6 +121,7 @@ p,span,b,i{
   font-size:1.8em;
   position: relative;
   top:5px;
+  text-align: center;
 }
 .todayCaseAcceptance span,.todayCaseClosed span{
   font-size:1.2em;
@@ -362,8 +375,9 @@ p,span,b,i{
   .todayCaseAcceptance p, .todayCaseClosed p{
     top:0.3em;
   }
-  .todayCaseAcceptance span, .todayCaseClosed span{
-    top:0.3em;
+  .todayCaseAcceptance>span, .todayCaseClosed>span{
+    top:0em;
+    z-index: 1;
   }
 }
 @media (min-width: 1600px) {

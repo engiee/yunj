@@ -128,7 +128,7 @@ var SHData = [
     [{name:'今日使用数：50以下'},{name:'平潭综合实验区',value:90}]
 ];
 
-var data04 = [
+var provenceData = [
     {name: '平潭综合实验区', value:'122@22'},
     {name: '宁德市', value: '122@23'},
     {name: '福州市', value: '178@20'},
@@ -168,7 +168,7 @@ $().ready(function(){
                 {  //有值的情况
                     type: 'scatter',
                     coordinateSystem: 'geo',
-                    data: convertData01(data04),
+                    data: convertData01(provenceData),
                     symbolSize: 2,
                     zlevel: 4,
                     label: {

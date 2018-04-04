@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/case.css"/>
     <link rel="stylesheet" href="css/font/iconfont.css"/>
     <link rel="stylesheet" href="css/rangeTime.css">
+    <link rel="stylesheet" href="css/fanpai.css">
     <style>
         #times{
             color:#00f1ff;
@@ -58,7 +59,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="return" style="z-index:12;"><a href="home.html"></a></div>
+                <div class="return" style="z-index:12;"><a onclick="window.location.href='home.html'"></a></div>
             </div>
         </div>
         <div class="caseContainer">
@@ -167,11 +168,11 @@
             <div class="caseMiddleMap">
                 <div class="caseMap">
                     <div class="todayCaseAcceptance" style="top:0;">
-                        <p class="numberFont">3,434</p>
+                        <p class="numberFont" id="caseAcceptence"></p>
                         <span>今日收案</span>
                     </div>
                     <div class="todayCaseClosed" style="top:0;">
-                        <p class="numberFont">4,454</p>
+                        <p class="numberFont" id="caseClosed"></p>
                         <span>今日结案</span>
                     </div>
                     <div id="caseMap"></div>
@@ -290,10 +291,55 @@
     <div class="footerLine footerLine2"></div>
 
     <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.fliptimer.js"></script>
     <script src="js/rangTime.jquery.js"></script>
     <script src="js/bigscreen.js"></script>
     <script src="js/echarts.js"></script>
     <script src="js/case.js"></script>
     <script src="js/mapTransfer.js"></script>
+    <script>
+        //收结案案件趋势tab页切换
+        $(".caseContainer .caseMiddleMap .caseTrend ul li").on("click",function () {
+            $(this).addClass("on").siblings().removeClass("on");
+        })
+        /*案件的今日收案翻牌*/
+        var valid3 = 1;
+        var data03 = 5643;
+        if (valid3 == 1) {
+            f1 = $('#caseAcceptence').flipTimer({
+                digitSetFontSize: 50,
+                digitSetFontWeight: 700,
+                digitSetWidth: 40,
+                digitSetMargin: "0 6px",
+                /*shadowTopPadding: "0 9px",*/
+                digitWrapLineHeight: 30,
+                digitWrapMarginTop: "-90%",
+                numLength: 4,
+                num: data03
+            });
+            valid++;
+        } else {
+            f1.increaseDigit(data03);
+        }
+        /*案件的今日结案翻牌*/
+        var valid4 = 1;
+        var data04 = 3333;
+        if (valid4 == 1) {
+            f1 = $('#caseClosed').flipTimer({
+                digitSetFontSize: 50,
+                digitSetFontWeight: 700,
+                digitSetWidth: 40,
+                digitSetMargin: "0 6px",
+                /*shadowTopPadding: "0 9px",*/
+                digitWrapLineHeight: 30,
+                digitWrapMarginTop: "-90%",
+                numLength: 4,
+                num: data04
+            });
+            valid++;
+        } else {
+            f1.increaseDigit(data04);
+        }
+    </script>
 </body>
 </html>

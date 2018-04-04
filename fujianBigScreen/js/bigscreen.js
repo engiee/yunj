@@ -21,7 +21,7 @@ var swajArr = [12,34,56,89];
 $(".indexColumn>div>div").animationBar(swajArr,false);
 //执行监控
 var zxjkArr = [12,34,56,89];
-$(".animationBar .animationBarInner>div").animationBar(zxjkArr,true);
+$(".zxMainRight .animationBar .animationBarInner>div").animationBar(zxjkArr,true);
 var dataInfo =  [12,34,56,89,12,34,56,89,12,34];
 
 $(".caseLeft .animationBarAble").animationBar(dataInfo,true);
@@ -57,3 +57,4 @@ $(document).on("click",function(e){
         $(".tankuangBox>i").removeClass("arrow-droped").html("&#xe6b9;");
     }
 });
+
