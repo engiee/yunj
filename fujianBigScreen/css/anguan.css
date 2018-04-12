@@ -423,7 +423,7 @@ sup {
   content: '0';
   font-family: DIN Alternate;
   position: absolute;
-  top:-2.4em;
+  top:-2em;
   left:-0.2em;
 }
 .ReferenceLineR b:nth-child(2)::before{
@@ -431,7 +431,7 @@ sup {
   font-family: DIN Alternate;
   letter-spacing: 0;
   position: absolute;
-  top:-2.4em;
+  top:-2em;
   left:-0.8em;
 }
 .ReferenceLineR b:nth-child(3)::before{

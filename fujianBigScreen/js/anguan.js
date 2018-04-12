@@ -70,7 +70,7 @@ function getEcharts(){
                                         color:'white'
                                     }
                                 }
-                            }/*,
+                            },
                             emphasis: {
                                 textStyle:{
                                     color:'white'
@@ -78,7 +78,7 @@ function getEcharts(){
                                 areaStyle:{
                                     color: '#3a428c'
                                 }
-                            }*/
+                            }
                         },
 
                         data:[],
@@ -97,6 +97,10 @@ function getEcharts(){
                         },
                         geoCoord: {
                             '福州': [119.306239,26.075302],
+                            '福州铁路法院': [119.406239,26.475302],
+                            '省高级法院': [119.706239,26.275302],
+                            '平潭实验区': [119.806239,25.425302],
+                            '厦门海事法院': [118.406239,24.475302],
                             '厦门': [118.11022,24.490474],
                             '莆田': [119.007558,25.431011],
                             '三明': [117.635001,26.265444],
@@ -125,6 +129,10 @@ function getEcharts(){
                             },
                             data : [
                                 {name:'福州',value:95},
+                                {name:'福州铁路法院',value:5},
+                                {name:'省高级法院',value:6},
+                                {name:'平潭实验区',value:7},
+                                {name:'厦门海事法院',value:8},
                                 {name:'厦门',value:90},
                                 {name:'莆田',value:80},
                                 {name:'三明',value:70},
