@@ -136,7 +136,7 @@ function getEcharts(){
                                 {name:'厦门',value:90},
                                 {name:'莆田',value:80},
                                 {name:'三明',value:70},
-                                {name:'泉州',value:60},
+                                {name:'泉州',value:51},
                                 {name:'漳州',value:50},
                                 {name:'南平',value:40},
                                 {name:'龙岩',value:30},
