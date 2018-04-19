@@ -36,15 +36,14 @@
   font-weight: bold;
   font-family: DIN Alternate;
   color: white;
-  font-size: 1.5vw;
+  font-size: 2vw;
   margin-right: 1vw;
 }
 .zxck .midle .midNums .txtNums .ddw .dw {
-  font-size: 0.5vw;
+  font-size: 1vw;
   position: absolute;
   color: #00f1ff;
-  top: 0px;
-  right: -0.8vw;
+  top: 0.3vh;
 }
 .zxck .midle .midNums .txtNums .ddw .xda {
   position: absolute;
@@ -85,8 +84,8 @@
 }
 .zxck .zxMain .zxMainLeft .zxcontainer .line {
   width: 64vw;
-  height: 42vh;
-  margin-top: 2vh;
+  height: 43vh;
+  margin-top: 1vh;
 }
 .zxck .zxMain .zxMainRight {
   float: right;
@@ -240,6 +239,9 @@
   width: 48vw;
   height: 24vh;
 }
+#checkedMaster #endData ins.iconfontAfter {
+  margin-left: -19px !important;
+}
 /*设配各种屏幕*/
 @media (min-width:1000px) and ( max-width: 1299px){
 
@@ -252,7 +254,19 @@
 }
 @media (min-width:1500px) and ( max-width: 1699px){
   .zxck .midle .midNums .miText{
-    line-height: 4vh;
+    line-height: 3.5vh;
+    font-size:1em;
+  }
+  .zxck .midle .midNums .txtNums .ddw .dw{
+    top:1px;
+  }
+  .zxck .midle .midNums .txtNums .ddw{
+    margin-right: 1vw;
+  }
+  .zxck .midle .midNums .txtNums .ddw .xda{
+    font-size:1.2vw;
+  }
+  #changeTimes.changeTimesRight {
   }
 }
 @media (min-width:1699px) and ( max-width: 1799px){
@@ -260,7 +274,10 @@
 }
 @media (max-width:40000px) and ( min-width: 1800px) {
   .zxck .midle .midNums .miText{
-    line-height:4vh;
+    line-height:3vh;
     font-size:1.2em;
+  }
+  .zxck .midle .midNums .txtNums .ddw .xda{
+    font-size:1vw;
   }
 }

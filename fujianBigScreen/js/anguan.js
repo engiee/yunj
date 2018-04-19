@@ -124,7 +124,11 @@ function getEcharts(){
                                     label:{show:false}
                                 },
                                 emphasis: {
-                                    label:{position:'top'}
+                                    label:{
+                                        position:'top',
+                                        formatter: '{b}:{c}'
+                                    }
+
                                 }
                             },
                             data : [

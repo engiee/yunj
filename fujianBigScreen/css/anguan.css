@@ -11,6 +11,8 @@
   background-size: contain;
   overflow: hidden;
   margin-right: 5%;
+  z-index: 3;
+  position: relative;
 }
 .anguan .agMid .contaniner .pic {
   position: relative;
@@ -152,7 +154,7 @@
 }
 .anguan .botom .list .cont .contlist .mid ul li {
   text-align: center;
-  line-height: 4vh;
+  line-height: 4.1vh;
 }
 .anguan .botom .list .cont .contlist .right {
   float: left;
@@ -195,10 +197,10 @@
 }
 .anguan .botom .map .mapArea {
   position: absolute;
-  height: 70vh;
-  top: -7vh;
-  width: 38vw;
-  left: -1.5vw;
+  height: 82vh;
+  top: -12vh;
+  width: 49vw;
+  left: -6.5vw;
 }
 .anguan .botom .map .length {
   position: absolute;
@@ -211,6 +213,8 @@
   display: inline-block;
   width: 1vw;
   margin-right: 0.5vw;
+  position: relative;
+  top: 0.2vh;
 }
 .anguan .botom .scope {
   width: 30%;
@@ -295,7 +299,7 @@ sup {
   font-size: 1vw;
 }
 .anguan .botom .scope .getout .gecon .fiLi {
-  margin-top: 3vh;
+  margin-top: 5.5vh;
   overflow: hidden;
 }
 .anguan .botom .scope .getout .gecon .fiLi .xt {
@@ -384,7 +388,7 @@ sup {
   font-family: DIN Alternate;
   letter-spacing: 0;
   position: absolute;
-  top:-2.4em;
+  top:-2.2em;
   left:-1em;
 }
 .ReferenceLineL b:nth-child(2)::before{
@@ -392,7 +396,7 @@ sup {
   font-family: DIN Alternate;
   letter-spacing: 0;
   position: absolute;
-  top:-2.4em;
+  top:-2.2em;
   left:-0.8em;
 }
 .ReferenceLineL b:nth-child(3)::before{
@@ -400,7 +404,7 @@ sup {
   font-family: DIN Alternate;
   letter-spacing: 0;
   position: absolute;
-  top:-2.4em;
+  top:-2.2em;
   left:-0.8em;
 }
 .ReferenceLineL b:nth-child(4)::before{
@@ -408,7 +412,7 @@ sup {
   font-family: DIN Alternate;
   letter-spacing: 0;
   position: absolute;
-  top:-2.4em;
+  top:-2.2em;
   left:-0.8em;
 }
 .ReferenceLineL b:nth-child(5)::before{
@@ -416,14 +420,14 @@ sup {
   font-family: DIN Alternate;
   letter-spacing: 0;
   position: absolute;
-  top:-2.4em;
+  top:-2.2em;
   left:-0.2em;
 }
 .ReferenceLineR b:first-child::before{
   content: '0';
   font-family: DIN Alternate;
   position: absolute;
-  top:-2em;
+  top:-2.2em;
   left:-0.2em;
 }
 .ReferenceLineR b:nth-child(2)::before{
@@ -431,7 +435,7 @@ sup {
   font-family: DIN Alternate;
   letter-spacing: 0;
   position: absolute;
-  top:-2em;
+  top:-2.2em;
   left:-0.8em;
 }
 .ReferenceLineR b:nth-child(3)::before{
@@ -439,7 +443,7 @@ sup {
   font-family: DIN Alternate;
   letter-spacing: 0;
   position: absolute;
-  top:-2.4em;
+  top:-2.2em;
   left:-0.8em;
 }
 .ReferenceLineR b:nth-child(4)::before{
@@ -447,7 +451,7 @@ sup {
   font-family: DIN Alternate;
   position: absolute;
   letter-spacing: 0;
-  top:-2.4em;
+  top:-2.2em;
   left:-0.8em;
 }
 .ReferenceLineR b:nth-child(5)::before{
@@ -455,7 +459,7 @@ sup {
   font-family: DIN Alternate;
   position: absolute;
   letter-spacing: 0;
-  top:-2.4em;
+  top:-2.2em;
   left:-1em;
 }.anguan .botom .list .cont p.referenceP {
    width: 100%;
@@ -463,6 +467,41 @@ sup {
    margin-top: 1vh;
    height:3vh;
    line-height: 3vh;
+ }
+.specailCourt{
+  position:absolute;
+  color:#fff;
+  z-index:3;
+  font-size:1.1em;
+}
+.specailCourt i{
+  display:inline-block;
+  width:5px;
+  height:5px;
+  border-radius:50%;
+  background:#33b4ff;
+  position:relative;
+  top:-3px;
+  right:3px;
+}
+.specailCourt:first-child{
+  top:20vh;
+  left:25vw;
+}
+.specailCourt:nth-child(2){
+  top:24vh;
+  left:24vw;
+}
+.specailCourt:nth-child(3){
+  top:34vh;
+  left:26vw;
+}
+.specailCourt:nth-child(4){
+  top:51vh;
+  left:18vw;
+}
+#checkedMaster #endData ins.iconfontAfter {
+  margin-left: -19px !important;
 }
 @media (min-width:1000px) and ( max-width: 1299px){
 
@@ -482,6 +521,9 @@ sup {
   }
   .anguan .agMid .contaniner .midtxt p:first-child {
     font-size: 1.2em;
+  }
+  #changeTimes.changeTimesRight {
+    top: -3px;
   }
 }
 @media (min-width:1700px) and ( max-width: 1799px){
