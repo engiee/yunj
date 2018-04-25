@@ -1,35 +1,25 @@
 
-function getStyle(obj, name)
-{
-	if(obj.currentStyle)
-	{
+function getStyle(obj, name) {
+	if(obj.currentStyle) {
 		return obj.currentStyle[name];
-	}
-	else
-	{
+	} else {
 		return getComputedStyle(obj, false)[name];
 	}
 }
 
 
-
-
-function startMove(obj, json, fnEnd)
-{
+function startMove(obj, json, fnEnd) {
 	clearInterval(obj.timer);
 	obj.timer=setInterval(function (){
 		var bStop=true;		//假设：所有值都已经到了
 		
-		for(var attr in json)
-		{
+		for(var attr in json) {
 			var cur=0;
 			
-			if(attr=='opacity')
-			{
+			if(attr=='opacity') {
 				cur=Math.round(parseFloat(getStyle(obj, attr))*100);
 			}
-			else
-			{
+			else {
 				cur=parseInt(getStyle(obj, attr));
 			}
 			
@@ -39,19 +29,16 @@ function startMove(obj, json, fnEnd)
 			if(cur!=json[attr])
 				bStop=false;
 			
-			if(attr=='opacity')
-			{
+			if(attr=='opacity') {
 				obj.style.filter='alpha(opacity:'+(cur+speed)+')';
 				obj.style.opacity=(cur+speed)/100;
 			}
-			else
-			{
+			else {
 				obj.style[attr]=cur+speed+'px';
 			}
 		}
 		
-		if(bStop)
-		{
+		if(bStop) {
 			clearInterval(obj.timer);
 						
 			if(fnEnd)fnEnd();
