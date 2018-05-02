@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0">
+    <title>Title</title>
+</head>
+<style>
+    #tab{
+        display: flex;
+        height:80px;
+        width:1000px;
+        background: #00a5d1;
+        flex-direction:column-reverse;
+    }
+    #tab div{
+        background: #d19388;
+        width:30px;
+        height:30px;
+    }
+    #box{
+        width:300px;
+        height:30px;
+        background: #00ff00;
+    }
+    #box div{
+        width:50%;
+        height:20px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        float: left;
+        border:1px solid #ddd;
+        background: #00f1fd;
+    }
+</style>
+<script>
+    window.onload = function () {
+
+    }
+</script>
+<body>
+ <div id="tab">
+     <div>1</div>
+     <div>2</div>
+     <div>3</div>
+ </div>
+
+  <div id="box">
+      <div>1</div>
+      <div>2</div>
+  </div>
+</body>
+</html>

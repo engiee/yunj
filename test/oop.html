@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0">
+    <title>Title</title>
+</head>
+<style>
+    #tab div{
+        width:200px;
+        height:200px;
+        background: #dddddd;
+        display: none;
+    }
+    #tab .active{
+        background: #d19388;
+    }
+    #tab .on{
+        display: block;
+    }
+</style>
+<script>
+//    window.onload = function () {
+//        var odiv = document.getElementById("tab");
+//        var abtn = odiv.getElementsByTagName("input");
+//        var adiv = odiv.getElementsByTagName("div");
+//        for(var i = 0;i<abtn.length;i++){
+//            abtn[i].index = i;
+//            abtn[i].onclick = function () {
+//                for(var i = 0;i<abtn.length;i++){
+//                    abtn[i].className = "";
+//                    adiv[i].className = "";
+//                }
+//                this.className = "active";
+//                adiv[this.index].className = "on";
+//            }
+//        }
+//    }
+    
+    //oop
+    function Tab() {
+        
+    }
+    window.onload = function () {
+      new Tab("tab");
+    }
+</script>
+<body>
+
+<div id="tab">
+<input class="active" type="button" value="新闻"/>
+<input type="button" value="历史"/>
+<input type="button" value="音乐"/>
+<div class="on">
+新闻内容
+</div>
+<div class="">
+历史内容
+</div>
+<div class="">
+音乐内容
+</div>
+</div>
+</body>
+</html>
