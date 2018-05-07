@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<div id="app">
+    <!-- 验证码输入框 -->
+    <input type="text" v-model="aaa" @blur="checkNum" />
+    <!-- 验证码切换按钮 -->
+    <input type="button" v-model="bbb" @click="createCode"/>
+    <!-- 提示信息 -->
+    <span type="text" style="color: red;">{{ ccc }}</span>
+</div>
+</body>
+<!-- import Vue before Element -->
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: function() {
+            return {
+                aaa:"",
+                bbb:"",
+                ccc:"提示信息"
+            }
+        },
+        created(){
+            this.createCode();//初始化生成一个4位数的验证码
+        },
+        methods: {
+            createCode(){
+                var code = "";
+                var codeLength = 4;//验证码的长度
+                var random = new Array(0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R',
+                    'S','T','U','V','W','X','Y','Z');//随机数
+                for(var i = 0; i < codeLength; i++) {
+                    //循环操作
+                    var index = Math.floor(Math.random()*36);//取得随机数的索引（0~35）
+                    code += random[index];//根据索引取得随机数加到code上
+                }
+                this.bbb = code;//把code值赋给验证码
+            },
+            checkNum(){
+                var num = this.aaa.toUpperCase();//输入内容全部转化为大写
+                if(num == this.bbb){
+                    this.ccc = "验证码正确";
+                }else{
+                    this.ccc = "验证码错误";
+                    this.createCode();
+                }
+            }
+        }
+    })
+</script>
+</html>
