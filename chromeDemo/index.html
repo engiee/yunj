@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="font/iconfont.css">
+    <style>
+        html,body{
+            margin:0;
+            padding:0;
+            background: #fff;
+        }
+        .chromeModal{
+            position: absolute;
+            width:100%;
+            height:100vh;
+            opacity:0.79;
+            background:rgba(51,51,51,0.79);
+        }
+        .chromeModalInner{
+            background:#ffffff;
+            border:1px solid #979797;
+            box-shadow:0 8px 20px 2px rgba(0,0,0,0.50);
+            width:394px;
+            height:234px;
+            margin:0 auto;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .chromeModalInner .chTitle{
+            background:#4d8adb;
+            width:100%;
+            height:40px;
+            overflow: visible;
+            position: relative;
+        }
+        .chromeModalInner .chTitle h3{
+            margin: 0;
+            color:#fff;
+            line-height:40px;
+            padding-left:40px;
+        }
+        .chromeModalInner .chTitle .yellowArea{
+            background:#fff3da;
+            border-radius:4px 4px 4px 4px;
+            width:183px;
+            height:29px;
+            position: absolute;
+            top:49px;
+            left:40px;
+            font-size:12px;
+            color:#666666;
+            line-height:29px;
+            text-align: center;
+        }
+        .chromeModalInner .chTitle .yellowArea::after{
+            content: '';
+            display: inline-block;
+            width:0;
+            height:0;
+            border:5px solid transparent;
+            border-bottom:5px solid #fff3da;
+            position: absolute;
+            top:-10px;
+            left:30px;
+        }
+        .chromeModalInner .chTitle .yellowArea i{
+            display: inline-block;
+            background:#ffcb5d;
+            width:4px;
+            vertical-align: middle;
+            margin-right:8px;
+            height:4px;
+            border-radius:100%;
+        }
+        .chromeModalInner .chTitle > i{
+            position: absolute;
+            color:#fff;
+            font-size:18px;
+            cursor: pointer;
+            right:19px;
+            top:10px;
+        }
+        .chromeModalInner .chMain{
+            padding: 59px 62px 0 40px;
+            width:394px;
+            box-sizing: border-box;
+        }
+        .chromeModalInner .chMain img{
+             width:34px;
+            height:34px;
+            float: left;
+            margin-top:2px;
+        }
+        .chromeModalInner .chMain .expText{
+            font-size:12px;
+            color:#666666;
+            letter-spacing:0;
+            line-height:20px;
+            text-align:left;
+            padding-left:48px;
+        }
+        .chromeModalInner .chMain h6{
+            padding-left:34px;
+            font-size:12px;
+            color:#999999;
+            letter-spacing:0;
+            text-align:left;
+        }
+        .chromeModalInner .chMain h6 a{
+            color: #4d8adb;
+            text-decoration: none;
+        }
+        .chromeModalInner .chMain h6 a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+ <div class="chromeModal">
+    <div class="chromeModalInner">
+        <div class="chTitle">
+            <h3>温馨提示</h3>
+            <div class="yellowArea"><i></i><span>经检测您未使用谷歌浏览器！</span></div>
+            <i class="iconfont">&#xe619;</i>
+        </div>
+        <div class="chMain">
+            <img src="chrome.png" alt="">
+            <div class="expText">请使用谷歌浏览器 Chrome 登录智能语音识别系统界面。</div>
+            <h6>如果没有此软件的安装程序，请<a href="#"> 点此下载 </a>。</h6>
+        </div>
+    </div>
+ </div>
+</body>
+</html>
